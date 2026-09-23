@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 280" font-family="system-ui, 'Microsoft YaHei', sans-serif">
+  <rect width="680" height="280" fill="#ffffff"/>
+  <text x="24" y="36" font-size="20" font-weight="700" fill="#1f2937">图1　工具调用的四步控制流</text>
+  <text x="24" y="60" font-size="13" fill="#6b7280">agent 真正产生副作用、也让上下文变长的一次完整回路</text>
+
+  <g font-size="14" fill="#ffffff" text-anchor="middle">
+    <rect x="24" y="100" width="135" height="64" rx="8" fill="#0d9488"/>
+    <text x="91" y="128">① LLM 吐 tool_call</text>
+    <text x="91" y="148" font-size="11" fill="#ccfbf1">一条 message</text>
+
+    <rect x="190" y="100" width="135" height="64" rx="8" fill="#d97706"/>
+    <text x="257" y="128">② resolve 按名解析</text>
+    <text x="257" y="148" font-size="11" fill="#fef3c7">名字对不上即失败</text>
+
+    <rect x="356" y="100" width="135" height="64" rx="8" fill="#7c3aed"/>
+    <text x="423" y="128">③ execute 执行</text>
+    <text x="423" y="148" font-size="11" fill="#ede9fe">进程内 / 跨网络</text>
+
+    <rect x="522" y="100" width="135" height="64" rx="8" fill="#0d9488"/>
+    <text x="589" y="128">④ 结果回写 state</text>
+    <text x="589" y="148" font-size="11" fill="#ccfbf1">真相的唯一来源</text>
+  </g>
+
+  <g stroke="#9ca3af" stroke-width="2">
+    <line x1="159" y1="132" x2="188" y2="132"/>
+    <line x1="325" y1="132" x2="355" y2="132"/>
+    <line x1="491" y1="132" x2="521" y2="132"/>
+  </g>
+  <g fill="#9ca3af" font-size="16">
+    <text x="166" y="128">▶</text>
+    <text x="332" y="128">▶</text>
+    <text x="498" y="128">▶</text>
+  </g>
+
+  <rect x="24" y="196" width="632" height="60" rx="8" fill="#f3f4f6"/>
+  <text x="40" y="220" font-size="13" fill="#374151">反直觉：result 看似多写一步，却是 state 真相来源；并行调用回写顺序无关紧要，</text>
+  <text x="40" y="240" font-size="13" fill="#374151">每个 result 带自己的 tool_call_id，框架按 id 归位。</text>
+</svg>
