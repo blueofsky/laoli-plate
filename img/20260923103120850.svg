@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 280" font-family="system-ui, 'Microsoft YaHei', sans-serif">
+  <rect width="680" height="280" fill="#ffffff"/>
+  <text x="24" y="36" font-size="20" font-weight="700" fill="#1f2937">图5　执行前的闸门</text>
+  <text x="24" y="60" font-size="13" fill="#6b7280">权限 / 沙箱 / HITL 三者都是"执行前"的闸，深度在第 10 期</text>
+
+  <!-- 调用请求 -->
+  <rect x="24" y="100" width="140" height="60" rx="8" fill="#e5e7eb"/>
+  <text x="94" y="135" font-size="14" fill="#374151" text-anchor="middle">tool 调用请求</text>
+
+  <line x1="164" y1="130" x2="200" y2="130" stroke="#9ca3af" stroke-width="2"/>
+  <polygon points="200,124 212,130 200,136" fill="#9ca3af"/>
+
+  <!-- 三闸并排 -->
+  <g text-anchor="middle" font-size="13" fill="#ffffff">
+    <rect x="216" y="100" width="130" height="60" rx="8" fill="#0d9488"/>
+    <text x="281" y="128">权限检查</text>
+    <text x="281" y="148" font-size="11" fill="#ccfbf1">能不能跑</text>
+
+    <rect x="360" y="100" width="130" height="60" rx="8" fill="#d97706"/>
+    <text x="425" y="128">沙箱隔离</text>
+    <text x="425" y="148" font-size="11" fill="#fef3c7">在哪跑</text>
+
+    <rect x="504" y="100" width="130" height="60" rx="8" fill="#7c3aed"/>
+    <text x="569" y="128">HITL 审批</text>
+    <text x="569" y="148" font-size="11" fill="#ede9fe">高危先确认</text>
+  </g>
+
+  <g stroke="#9ca3af" stroke-width="2">
+    <line x1="346" y1="130" x2="358" y2="130"/>
+    <line x1="490" y1="130" x2="502" y2="130"/>
+  </g>
+
+  <!-- 实际执行 -->
+  <line x1="634" y1="130" x2="660" y2="130" stroke="#9ca3af" stroke-width="2"/>
+  <polygon points="660,124 672,130 660,136" fill="#9ca3af"/>
+  <rect x="624" y="100" width="40" height="60" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="644" y="135" font-size="12" fill="#166534" text-anchor="middle">执行</text>
+
+  <rect x="24" y="196" width="632" height="56" rx="8" fill="#f3f4f6"/>
+  <text x="40" y="220" font-size="13" fill="#374151">闸门顺序：先判权限、再进沙箱、高危操作在沙箱内也要 human-in-the-loop 确认，</text>
+  <text x="40" y="240" font-size="13" fill="#374151">确认通过才真正执行。位置错了（执行后才确认）后果不可撤销。</text>
+</svg>
