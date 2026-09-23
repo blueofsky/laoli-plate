@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" font-family="system-ui, 'Microsoft YaHei', sans-serif">
+  <rect width="680" height="300" fill="#ffffff"/>
+  <text x="24" y="36" font-size="20" font-weight="700" fill="#1f2937">图2　工具的三种形态</text>
+  <text x="24" y="60" font-size="13" fill="#6b7280">同一段四步控制流，差别只在代码跑在哪</text>
+
+  <g text-anchor="middle">
+    <!-- 本地函数 -->
+    <rect x="24" y="90" width="200" height="180" rx="10" fill="#f0fdfa" stroke="#0d9488" stroke-width="2"/>
+    <rect x="24" y="90" width="200" height="40" rx="10" fill="#0d9488"/>
+    <text x="124" y="116" font-size="15" font-weight="700" fill="#ffffff">本地函数</text>
+    <text x="124" y="160" font-size="13" fill="#334155">执行位置：进程内</text>
+    <text x="124" y="184" font-size="13" fill="#334155">直接 callable</text>
+    <text x="124" y="208" font-size="13" fill="#334155">注册：函数装饰器</text>
+    <text x="124" y="240" font-size="11" fill="#0d9488">本篇深讲</text>
+
+    <!-- MCP 远程 -->
+    <rect x="240" y="90" width="200" height="180" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+    <rect x="240" y="90" width="200" height="40" rx="10" fill="#d97706"/>
+    <text x="340" y="116" font-size="15" font-weight="700" fill="#ffffff">MCP 远程工具</text>
+    <text x="340" y="160" font-size="13" fill="#334155">执行位置：远端 server</text>
+    <text x="340" y="184" font-size="13" fill="#334155">JSON-RPC 跨进程</text>
+    <text x="340" y="208" font-size="13" fill="#334155">注册：MCP client 接入</text>
+    <text x="340" y="240" font-size="11" fill="#d97706">深讲第 8 期</text>
+
+    <!-- Skill -->
+    <rect x="456" y="90" width="200" height="180" rx="10" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+    <rect x="456" y="90" width="200" height="40" rx="10" fill="#7c3aed"/>
+    <text x="556" y="116" font-size="15" font-weight="700" fill="#ffffff">Skill 封装</text>
+    <text x="556" y="160" font-size="13" fill="#334155">组合层：多步编排</text>
+    <text x="556" y="184" font-size="13" fill="#334155">含多个 tool_call</text>
+    <text x="556" y="208" font-size="13" fill="#334155">注册：Skill 注册</text>
+    <text x="556" y="240" font-size="11" fill="#7c3aed">深讲第 9 期</text>
+  </g>
+
+  <text x="24" y="294" font-size="12" fill="#6b7280">例子：查天气 / 查日历 / 发邮件都是本地函数；日历若接远端 SaaS 则变 MCP 形态。</text>
+</svg>
