@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <rect x="0" y="0" width="680" height="420" fill="#ffffff"/>
+  <text x="340" y="42" font-size="22" font-weight="700" fill="#1f2937" text-anchor="middle">四家接入对照</text>
+  <text x="340" y="68" font-size="13" fill="#6b7280" text-anchor="middle">组合机制 / 是否一等公民 / 怎么进 loop</text>
+
+  <!-- header row -->
+  <rect x="40" y="92" width="140" height="40" rx="8" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="110" y="117" font-size="13" font-weight="700" fill="#374151" text-anchor="middle">框架</text>
+  <rect x="190" y="92" width="200" height="40" rx="8" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="290" y="117" font-size="13" font-weight="700" fill="#374151" text-anchor="middle">组合机制</text>
+  <rect x="400" y="92" width="110" height="40" rx="8" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="455" y="117" font-size="13" font-weight="700" fill="#374151" text-anchor="middle">一等公民</text>
+  <rect x="520" y="92" width="120" height="40" rx="8" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="580" y="117" font-size="13" font-weight="700" fill="#374151" text-anchor="middle">关键 API</text>
+
+  <!-- OpenAI -->
+  <rect x="40" y="142" width="140" height="58" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="110" y="176" font-size="14" font-weight="700" fill="#0f766e" text-anchor="middle">OpenAI</text>
+  <text x="110" y="194" font-size="11" fill="#6b7280" text-anchor="middle">Agents SDK</text>
+  <rect x="190" y="142" width="200" height="58" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="290" y="172" font-size="12" fill="#374151" text-anchor="middle">agent-as-tool</text>
+  <text x="290" y="190" font-size="12" fill="#374151" text-anchor="middle">+ 命名空间延迟加载</text>
+  <rect x="400" y="142" width="110" height="58" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="455" y="176" font-size="12" fill="#dc2626" text-anchor="middle">否</text>
+  <rect x="520" y="142" width="120" height="58" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="580" y="172" font-size="11" fill="#374151" text-anchor="middle">as_tool()</text>
+  <text x="580" y="190" font-size="11" fill="#374151" text-anchor="middle">tool_namespace()</text>
+
+  <!-- LangGraph -->
+  <rect x="40" y="210" width="140" height="58" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="110" y="244" font-size="14" font-weight="700" fill="#92400e" text-anchor="middle">LangGraph</text>
+  <rect x="190" y="210" width="200" height="58" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="290" y="240" font-size="12" fill="#374151" text-anchor="middle">subgraph 作组件</text>
+  <text x="290" y="258" font-size="12" fill="#374151" text-anchor="middle">+ Skill 集成三法</text>
+  <rect x="400" y="210" width="110" height="58" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="455" y="244" font-size="12" fill="#dc2626" text-anchor="middle">否</text>
+  <rect x="520" y="210" width="120" height="58" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="580" y="240" font-size="11" fill="#374151" text-anchor="middle">StateGraph</text>
+  <text x="580" y="258" font-size="11" fill="#374151" text-anchor="middle">.compile()</text>
+
+  <!-- AgentScope -->
+  <rect x="40" y="278" width="140" height="58" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="110" y="312" font-size="14" font-weight="700" fill="#5b21b6" text-anchor="middle">AgentScope</text>
+  <text x="110" y="330" font-size="11" fill="#6b7280" text-anchor="middle">2.0</text>
+  <rect x="190" y="278" width="200" height="58" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="290" y="308" font-size="12" fill="#374151" text-anchor="middle">SKILL.md 目录</text>
+  <text x="290" y="326" font-size="12" fill="#374151" text-anchor="middle">+ 查看器</text>
+  <rect x="400" y="278" width="110" height="58" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="455" y="312" font-size="12" font-weight="700" fill="#0f766e" text-anchor="middle">是</text>
+  <rect x="520" y="278" width="120" height="58" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="580" y="308" font-size="11" fill="#374151" text-anchor="middle">Toolkit</text>
+  <text x="580" y="326" font-size="11" fill="#374151" text-anchor="middle">skills_or_loaders</text>
+
+  <!-- AutoGen -->
+  <rect x="40" y="346" width="140" height="58" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="110" y="380" font-size="14" font-weight="700" fill="#991b1b" text-anchor="middle">AutoGen</text>
+  <text x="110" y="398" font-size="11" fill="#6b7280" text-anchor="middle">0.4</text>
+  <rect x="190" y="346" width="200" height="58" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="290" y="376" font-size="12" fill="#374151" text-anchor="middle">agents / teams</text>
+  <text x="290" y="394" font-size="11" fill="#6b7280" text-anchor="middle">maintenance mode</text>
+  <rect x="400" y="346" width="110" height="58" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="455" y="380" font-size="12" fill="#dc2626" text-anchor="middle">否</text>
+  <rect x="520" y="346" width="120" height="58" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="580" y="376" font-size="11" fill="#374151" text-anchor="middle">GroupChat</text>
+  <text x="580" y="394" font-size="11" fill="#374151" text-anchor="middle">Swarm</text>
+</svg>
