@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" font-family="system-ui, 'Microsoft YaHei', sans-serif">
+  <rect width="680" height="300" fill="#ffffff"/>
+  <text x="24" y="36" font-size="20" font-weight="700" fill="#1f2937">图4　MCP 工具跨边界</text>
+  <text x="24" y="60" font-size="13" fill="#6b7280">工具一旦跨进程 / 跨厂商，就从内联函数变成协议翻译（Babel 成本）</text>
+
+  <!-- agent 侧 -->
+  <rect x="24" y="96" width="270" height="170" rx="10" fill="#f0fdfa" stroke="#0d9488" stroke-width="2"/>
+  <text x="159" y="124" font-size="15" font-weight="700" fill="#0d9488" text-anchor="middle">Agent 进程内</text>
+  <rect x="48" y="140" width="222" height="40" rx="6" fill="#ffffff" stroke="#94a3b8"/>
+  <text x="159" y="165" font-size="13" fill="#334155" text-anchor="middle">本地函数：直接调用</text>
+  <rect x="48" y="190" width="222" height="40" rx="6" fill="#ffffff" stroke="#94a3b8"/>
+  <text x="159" y="215" font-size="13" fill="#334155" text-anchor="middle">MCP client（不跨边界）</text>
+
+  <!-- 边界 -->
+  <rect x="300" y="150" width="80" height="60" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="340" y="174" font-size="12" fill="#92400e" text-anchor="middle">边界层</text>
+  <text x="340" y="194" font-size="11" fill="#92400e" text-anchor="middle">JSON-RPC</text>
+  <text x="340" y="86" font-size="11" fill="#d97706" text-anchor="middle">翻译 / Babel 成本</text>
+  <line x1="294" y1="180" x2="300" y2="180" stroke="#9ca3af" stroke-width="2"/>
+  <line x1="380" y1="180" x2="386" y2="180" stroke="#9ca3af" stroke-width="2"/>
+
+  <!-- 远端 -->
+  <rect x="386" y="96" width="270" height="170" rx="10" fill="#fff7ed" stroke="#d97706" stroke-width="2"/>
+  <text x="521" y="124" font-size="15" font-weight="700" fill="#d97706" text-anchor="middle">远端 MCP Server</text>
+  <rect x="410" y="140" width="222" height="40" rx="6" fill="#ffffff" stroke="#94a3b8"/>
+  <text x="521" y="165" font-size="13" fill="#334155" text-anchor="middle">tool 在另一进程 / 语言</text>
+  <rect x="410" y="190" width="222" height="40" rx="6" fill="#ffffff" stroke="#94a3b8"/>
+  <text x="521" y="215" font-size="13" fill="#334155" text-anchor="middle">跨厂商复用同一工具</text>
+
+  <text x="24" y="294" font-size="12" fill="#6b7280">判据：进程内用内联函数；跨进程 / 跨厂商走 MCP。深讲见第 8 期。</text>
+</svg>
