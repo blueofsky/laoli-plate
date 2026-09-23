@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" font-family="-apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <style>
+    .t { font-size: 15px; font-weight: 700; }
+    .s { font-size: 12px; fill: #475569; }
+    .b { font-size: 13px; }
+    .teal { fill: #0d9488; }
+    .purple { fill: #6d28d9; }
+    .card { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; }
+  </style>
+  <rect x="0" y="0" width="720" height="360" fill="#f8fafc"/>
+
+  <text x="360" y="32" text-anchor="middle" class="t teal">协议栈：能力在 JSON-RPC 2.0 层，transport 只是管道</text>
+
+  <!-- 传输层 -->
+  <rect x="60" y="60" width="600" height="92" rx="10" class="card"/>
+  <text x="80" y="86" class="b purple">传输层（transport）— 只管通道与鉴权，决定不了能力</text>
+  <g>
+    <rect x="90" y="98" width="150" height="40" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+    <text x="165" y="123" text-anchor="middle" class="b purple">stdio</text>
+    <rect x="285" y="98" width="170" height="40" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/>
+    <text x="370" y="123" text-anchor="middle" class="b purple">Streamable HTTP</text>
+    <rect x="500" y="98" width="140" height="40" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <text x="570" y="123" text-anchor="middle" class="b" fill="#64748b">SSE（已废弃）</text>
+  </g>
+  <line x1="360" y1="152" x2="360" y2="172" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#d)"/>
+
+  <!-- 数据层 -->
+  <rect x="60" y="176" width="600" height="150" rx="10" class="card"/>
+  <text x="80" y="202" class="b teal">数据层（JSON-RPC 2.0）— 携带全部语义</text>
+  <g>
+    <rect x="90" y="214" width="240" height="38" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+    <text x="210" y="238" text-anchor="middle" class="b teal">server/discover（版本与能力协商）</text>
+    <rect x="370" y="214" width="260" height="38" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+    <text x="500" y="238" text-anchor="middle" class="b teal">elicitation/create（向用户索取输入）</text>
+
+    <rect x="90" y="262" width="150" height="46" rx="8" fill="#ffffff" stroke="#0d9488" stroke-width="1.5"/>
+    <text x="165" y="282" text-anchor="middle" class="b teal">tools</text>
+    <text x="165" y="300" text-anchor="middle" class="s">list / call</text>
+    <rect x="260" y="262" width="150" height="46" rx="8" fill="#ffffff" stroke="#0d9488" stroke-width="1.5"/>
+    <text x="335" y="282" text-anchor="middle" class="b teal">resources</text>
+    <text x="335" y="300" text-anchor="middle" class="s">list / read</text>
+    <rect x="430" y="262" width="150" height="46" rx="8" fill="#ffffff" stroke="#0d9488" stroke-width="1.5"/>
+    <text x="505" y="282" text-anchor="middle" class="b teal">prompts</text>
+    <text x="505" y="300" text-anchor="middle" class="s">list / get</text>
+  </g>
+
+  <text x="360" y="350" text-anchor="middle" class="s">换 transport（stdio ↔ HTTP）不改任何能力，只是换了管道</text>
+
+  <defs>
+    <marker id="d" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#94a3b8"/></marker>
+  </defs>
+</svg>
