@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" font-family="-apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <style>
+    .t { font-size: 15px; font-weight: 700; }
+    .b { font-size: 13px; }
+    .s { font-size: 12px; fill: #475569; }
+    .teal { fill: #0d9488; }
+    .purple { fill: #6d28d9; }
+    .amber { fill: #b45309; }
+    .root { fill: #0d9488; }
+    .dia { fill: #ffffff; stroke: #0d9488; stroke-width: 1.5; }
+    .opt { fill: #ffffff; stroke-width: 1.5; }
+  </style>
+  <rect x="0" y="0" width="720" height="360" fill="#f8fafc"/>
+
+  <text x="360" y="28" text-anchor="middle" class="t teal">transport 选型决策树</text>
+
+  <!-- root -->
+  <rect x="285" y="44" width="150" height="40" rx="20" class="root"/>
+  <text x="360" y="69" text-anchor="middle" fill="#ffffff" class="b">选 transport</text>
+
+  <!-- diamond -->
+  <polygon points="360,116 480,150 360,184 240,150" class="dia"/>
+  <text x="360" y="146" text-anchor="middle" class="b teal">场景是什么？</text>
+  <text x="360" y="164" text-anchor="middle" class="s">部署 / 共享 / 兼容</text>
+
+  <line x1="360" y1="84" x2="360" y2="114" stroke="#0d9488" stroke-width="1.5" marker-end="url(#d)"/>
+  <line x1="270" y1="168" x2="120" y2="210" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#g)"/>
+  <line x1="360" y1="184" x2="360" y2="210" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#g)"/>
+  <line x1="450" y1="168" x2="600" y2="210" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#g)"/>
+
+  <text x="170" y="180" text-anchor="middle" class="s">本地单人</text>
+  <text x="360" y="205" text-anchor="middle" class="s">团队 / 生产</text>
+  <text x="555" y="180" text-anchor="middle" class="s">对接遗留</text>
+
+  <!-- options -->
+  <rect x="40" y="214" width="170" height="70" rx="10" class="opt" stroke="#0d9488"/>
+  <text x="125" y="244" text-anchor="middle" class="b teal">stdio</text>
+  <text x="125" y="266" text-anchor="middle" class="s">子进程、零网络开销</text>
+  <text x="125" y="282" text-anchor="middle" class="s">本地开发首选</text>
+
+  <rect x="275" y="214" width="170" height="70" rx="10" class="opt" stroke="#6d28d9"/>
+  <text x="360" y="244" text-anchor="middle" class="b purple">Streamable HTTP</text>
+  <text x="360" y="266" text-anchor="middle" class="s">跨机器、标准鉴权</text>
+  <text x="360" y="282" text-anchor="middle" class="s">生产共享首选</text>
+
+  <rect x="510" y="214" width="170" height="70" rx="10" class="opt" stroke="#94a3b8" stroke-dasharray="5 4"/>
+  <text x="595" y="244" text-anchor="middle" class="b amber">SSE（已废弃）</text>
+  <text x="595" y="266" text-anchor="middle" class="s">仅临时对接遗留</text>
+  <text x="595" y="282" text-anchor="middle" class="s">新 server 别用</text>
+
+  <!-- auth note -->
+  <rect x="160" y="306" width="400" height="40" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="360" y="330" text-anchor="middle" class="b purple">有鉴权需求 → 走 HTTP headers（Streamable HTTP 自带 Bearer / 自定义）</text>
+
+  <defs>
+    <marker id="d" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#0d9488"/></marker>
+    <marker id="g" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#94a3b8"/></marker>
+  </defs>
+</svg>
