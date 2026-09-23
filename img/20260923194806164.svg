@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 440" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <rect x="0" y="0" width="680" height="440" fill="#ffffff"/>
+  <text x="340" y="42" font-size="22" font-weight="700" fill="#1f2937" text-anchor="middle">选型与纪律决策树</text>
+  <text x="340" y="68" font-size="13" fill="#6b7280" text-anchor="middle">多步 + 可复用 → Skill；单步原子 → 直接 tool</text>
+
+  <!-- root -->
+  <rect x="250" y="92" width="180" height="50" rx="12" fill="#1f2937"/>
+  <text x="340" y="122" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">要封装一个能力？</text>
+
+  <!-- branch 1: 单步原子 -->
+  <path d="M250 117 L150 117 L150 160" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#at)"/>
+  <rect x="40" y="160" width="180" height="56" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="130" y="186" font-size="13" font-weight="700" fill="#92400e" text-anchor="middle">单步原子操作</text>
+  <text x="130" y="206" font-size="12" fill="#374151" text-anchor="middle">直接给 tool，更快</text>
+
+  <!-- branch 2: 多步可复用 -->
+  <path d="M430 117 L530 117 L530 160" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#at)"/>
+  <rect x="440" y="160" width="200" height="56" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+  <text x="540" y="186" font-size="13" font-weight="700" fill="#0f766e" text-anchor="middle">多步 + 可复用</text>
+  <text x="540" y="206" font-size="12" fill="#374151" text-anchor="middle">做成 Skill</text>
+
+  <!-- sub from skill: 跨边界 -->
+  <path d="M540 216 L540 252" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#at)"/>
+  <rect x="440" y="252" width="200" height="56" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <text x="540" y="278" font-size="12" font-weight="700" fill="#5b21b6" text-anchor="middle">能力需跨边界</text>
+  <text x="540" y="298" font-size="12" fill="#374151" text-anchor="middle">Skill 内嵌 MCP</text>
+
+  <!-- sub from skill: 上下文敏感 -->
+  <path d="M440 280 L360 280 L360 340" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#at)"/>
+  <rect x="250" y="340" width="220" height="56" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="360" y="366" font-size="12" font-weight="700" fill="#1e40af" text-anchor="middle">上下文敏感 / 不想全量加载</text>
+  <text x="360" y="386" font-size="12" fill="#374151" text-anchor="middle">渐进披露 L1 / L2 / L3</text>
+
+  <defs>
+    <marker id="at" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#9ca3af"/>
+    </marker>
+  </defs>
+</svg>
