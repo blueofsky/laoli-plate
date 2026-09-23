@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" font-family="-apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <style>
+    .t { font-size: 15px; font-weight: 700; }
+    .h { font-size: 13px; font-weight: 700; fill: #ffffff; }
+    .b { font-size: 12.5px; }
+    .teal { fill: #0d9488; }
+    .purple { fill: #6d28d9; }
+    .amber { fill: #b45309; }
+    .code { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 11.5px; }
+    .hd { fill: #0d9488; }
+  </style>
+  <rect x="0" y="0" width="720" height="340" fill="#f8fafc"/>
+
+  <text x="360" y="30" text-anchor="middle" class="t teal">四家接入对照：挂 server / 拿 tools / 进 loop</text>
+
+  <!-- header -->
+  <rect x="40" y="50" width="130" height="40" rx="6" class="hd"/>
+  <text x="105" y="75" text-anchor="middle" class="h">框架</text>
+  <rect x="175" y="50" width="170" height="40" rx="6" class="hd"/>
+  <text x="260" y="75" text-anchor="middle" class="h">挂 server</text>
+  <rect x="350" y="50" width="170" height="40" rx="6" class="hd"/>
+  <text x="435" y="75" text-anchor="middle" class="h">拿 tools</text>
+  <rect x="525" y="50" width="155" height="40" rx="6" class="hd"/>
+  <text x="602" y="75" text-anchor="middle" class="h">进 loop</text>
+
+  <!-- rows -->
+  <g>
+    <!-- OpenAI -->
+    <rect x="40" y="98" width="130" height="50" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.2"/>
+    <text x="105" y="128" text-anchor="middle" class="b teal">OpenAI</text>
+    <rect x="175" y="98" width="170" height="50" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="185" y="124" class="code teal">MCPServerStdio</text>
+    <text x="185" y="142" class="code teal">MCPServerStreamableHttp</text>
+    <rect x="350" y="98" width="170" height="50" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="360" y="124" class="code">Agent(</text>
+    <text x="360" y="142" class="code">  mcp_servers=[...])</text>
+    <rect x="525" y="98" width="155" height="50" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="535" y="124" class="code">Runner.run</text>
+    <text x="535" y="142" class="s">自动进 LLM 可见集</text>
+
+    <!-- LangGraph -->
+    <rect x="40" y="154" width="130" height="50" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.2"/>
+    <text x="105" y="184" text-anchor="middle" class="b teal">LangGraph</text>
+    <rect x="175" y="154" width="170" height="50" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="185" y="180" class="code teal">MultiServer</text>
+    <text x="185" y="198" class="code teal">MCPClient</text>
+    <rect x="350" y="154" width="170" height="50" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="360" y="180" class="code">client.get_tools()</text>
+    <text x="360" y="198" class="s">→ ToolNode</text>
+    <rect x="525" y="154" width="155" height="50" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="535" y="180" class="code">create_agent</text>
+    <text x="535" y="198" class="s">（旧 create_react 废弃）</text>
+
+    <!-- AgentScope -->
+    <rect x="40" y="210" width="130" height="50" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.2"/>
+    <text x="105" y="240" text-anchor="middle" class="b teal">AgentScope</text>
+    <rect x="175" y="210" width="170" height="50" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="185" y="236" class="code purple">MCPClient +</text>
+    <text x="185" y="254" class="code purple">StdioMCPConfig</text>
+    <rect x="350" y="210" width="170" height="50" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="360" y="236" class="code">Toolkit(</text>
+    <text x="360" y="254" class="code">  mcps=[...])</text>
+    <rect x="525" y="210" width="155" height="50" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="535" y="236" class="code">ReActAgent</text>
+    <text x="535" y="254" class="s">命名空间 mcp__x__y</text>
+
+    <!-- AutoGen -->
+    <rect x="40" y="266" width="130" height="50" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.2"/>
+    <text x="105" y="296" text-anchor="middle" class="b teal">AutoGen</text>
+    <rect x="175" y="266" width="170" height="50" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="185" y="292" class="code purple">McpWorkbench +</text>
+    <text x="185" y="310" class="code purple">StdioServerParams</text>
+    <rect x="350" y="266" width="170" height="50" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="360" y="292" class="code">AssistantAgent(</text>
+    <text x="360" y="310" class="code">  workbench=...)</text>
+    <rect x="525" y="266" width="155" height="50" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="535" y="292" class="code">agent.run</text>
+    <text x="535" y="310" class="s">工具自动可见</text>
+  </g>
+
+  <text x="360" y="334" text-anchor="middle" class="s">四家类名不同，三步结构一致：都只翻译接口，不接管执行</text>
+</svg>
