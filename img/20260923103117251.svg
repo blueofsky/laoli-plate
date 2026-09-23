@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" font-family="system-ui, 'Microsoft YaHei', sans-serif">
+  <rect width="680" height="320" fill="#ffffff"/>
+  <text x="24" y="36" font-size="20" font-weight="700" fill="#1f2937">图3　四家框架的注册与调用范式</text>
+  <text x="24" y="60" font-size="13" fill="#6b7280">注册方式 / 并行 / 流式 args / 回写 / HITL 五维度横评</text>
+
+  <g text-anchor="middle" font-size="13" fill="#334155">
+    <!-- OpenAI -->
+    <rect x="24" y="84" width="150" height="200" rx="10" fill="#f0fdfa" stroke="#0d9488" stroke-width="2"/>
+    <rect x="24" y="84" width="150" height="36" rx="10" fill="#0d9488"/>
+    <text x="99" y="108" font-size="14" font-weight="700" fill="#ffffff">OpenAI</text>
+    <text x="99" y="140">@tool 装饰</text>
+    <text x="99" y="164">Tool 统一</text>
+    <text x="99" y="188">ToolNode 自动并行</text>
+    <text x="99" y="212">raw delta 在</text>
+    <text x="99" y="230">raw_response</text>
+    <text x="99" y="256">needs_approval</text>
+
+    <!-- LangGraph -->
+    <rect x="186" y="84" width="150" height="200" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+    <rect x="186" y="84" width="150" height="36" rx="10" fill="#d97706"/>
+    <text x="261" y="108" font-size="14" font-weight="700" fill="#ffffff">LangGraph</text>
+    <text x="261" y="140">@tool + ToolNode</text>
+    <text x="261" y="164">无单独并行类</text>
+    <text x="261" y="188">ToolNode 自动并行</text>
+    <text x="261" y="212">取决于模型流</text>
+    <text x="261" y="230">ToolMessage</text>
+    <text x="261" y="256">interrupt()</text>
+
+    <!-- AgentScope -->
+    <rect x="348" y="84" width="150" height="200" rx="10" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+    <rect x="348" y="84" width="150" height="36" rx="10" fill="#7c3aed"/>
+    <text x="423" y="108" font-size="14" font-weight="700" fill="#ffffff">AgentScope</text>
+    <text x="423" y="140">Toolkit</text>
+    <text x="423" y="164">register_fn</text>
+    <text x="423" y="188">runtime 并发</text>
+    <text x="423" y="212">工具异步生成</text>
+    <text x="423" y="230">ToolResponse</text>
+    <text x="423" y="256">权限/中间件</text>
+
+    <!-- AutoGen -->
+    <rect x="510" y="84" width="150" height="200" rx="10" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+    <rect x="510" y="84" width="150" height="36" rx="10" fill="#0891b2"/>
+    <text x="585" y="108" font-size="14" font-weight="700" fill="#ffffff">AutoGen</text>
+    <text x="585" y="140">FunctionTool</text>
+    <text x="585" y="164">包函数</text>
+    <text x="585" y="188">事件驱动</text>
+    <text x="585" y="212">取决于模型流</text>
+    <text x="585" y="230">ExecutionEvent</text>
+    <text x="585" y="256">RoutedAgent 拦截</text>
+  </g>
+
+  <text x="24" y="312" font-size="12" fill="#6b7280">共同点：tool_call/result 都当 message、都支持并行、HITL 在执行前、机制全是框架私产。</text>
+</svg>
