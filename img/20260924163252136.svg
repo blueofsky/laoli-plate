@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <rect x="0" y="0" width="680" height="380" fill="#ffffff"/>
+  <text x="340" y="40" font-size="22" font-weight="700" fill="#1f2937" text-anchor="middle">框架 / 库落地形态对照</text>
+  <text x="340" y="66" font-size="12" fill="#6b7280" text-anchor="middle">托管 store（LangGraph） · 内存故事（OpenAI） · 新范式（AgentScope） · bolt-on（三家）</text>
+
+  <!-- LangGraph -->
+  <rect x="20" y="90" width="155" height="270" rx="12" fill="#ffffff" stroke="#0d9488" stroke-width="2"/>
+  <rect x="20" y="90" width="155" height="40" rx="12" fill="#ccfbf1"/>
+  <text x="97" y="116" font-size="14" font-weight="700" fill="#0f766e" text-anchor="middle">LangGraph Store</text>
+  <text x="97" y="152" font-size="11" fill="#374151" text-anchor="middle">稳定 · cross-thread</text>
+  <text x="97" y="178" font-size="11" fill="#374151" text-anchor="middle">checkpointer+store</text>
+  <text x="97" y="198" font-size="11" fill="#374151" text-anchor="middle">必须双挂</text>
+  <text x="97" y="224" font-size="11" fill="#374151" text-anchor="middle">namespace tuple</text>
+  <text x="97" y="250" font-size="11" fill="#374151" text-anchor="middle">语义检索需</text>
+  <text x="97" y="270" font-size="11" fill="#374151" text-anchor="middle">embedding 索引</text>
+  <text x="97" y="300" font-size="11" fill="#374151" text-anchor="middle">LangMem 封装</text>
+  <text x="97" y="320" font-size="11" fill="#374151" text-anchor="middle">三类记忆</text>
+
+  <!-- OpenAI -->
+  <rect x="183" y="90" width="155" height="270" rx="12" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+  <rect x="183" y="90" width="155" height="40" rx="12" fill="#ede9fe"/>
+  <text x="260" y="116" font-size="13" font-weight="700" fill="#5b21b6" text-anchor="middle">OpenAI v2</text>
+  <text x="260" y="152" font-size="11" fill="#374151" text-anchor="middle">Configurable</text>
+  <text x="260" y="172" font-size="11" fill="#374151" text-anchor="middle">Memory（2026-04）</text>
+  <text x="260" y="198" font-size="11" fill="#374151" text-anchor="middle">Session（短时）</text>
+  <text x="260" y="224" font-size="11" fill="#374151" text-anchor="middle">Sandbox（长时·文件）</text>
+  <text x="260" y="250" font-size="11" fill="#374151" text-anchor="middle">harness 接口</text>
+  <text x="260" y="276" font-size="11" fill="#374151" text-anchor="middle">非开箱托管</text>
+  <text x="260" y="296" font-size="11" fill="#374151" text-anchor="middle">向量库</text>
+  <text x="260" y="320" font-size="11" fill="#374151" text-anchor="middle">异步写</text>
+
+  <!-- AgentScope -->
+  <rect x="346" y="90" width="155" height="270" rx="12" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+  <rect x="346" y="90" width="155" height="40" rx="12" fill="#fef3c7"/>
+  <text x="423" y="116" font-size="14" font-weight="700" fill="#92400e" text-anchor="middle">AgentScope 2.0</text>
+  <text x="423" y="152" font-size="11" fill="#374151" text-anchor="middle">旧 memory</text>
+  <text x="423" y="172" font-size="11" fill="#374151" text-anchor="middle">已 @Deprecated</text>
+  <text x="423" y="198" font-size="11" fill="#374151" text-anchor="middle">MEMORY.md</text>
+  <text x="423" y="218" font-size="11" fill="#374151" text-anchor="middle">+ @Tool 写</text>
+  <text x="423" y="244" font-size="11" fill="#374151" text-anchor="middle">Compaction</text>
+  <text x="423" y="264" font-size="11" fill="#374151" text-anchor="middle">+ MemoryFlush</text>
+  <text x="423" y="290" font-size="11" fill="#374151" text-anchor="middle">与本文</text>
+  <text x="423" y="310" font-size="11" fill="#374151" text-anchor="middle">记忆即工具同构</text>
+
+  <!-- 三家 -->
+  <rect x="509" y="90" width="155" height="270" rx="12" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+  <rect x="509" y="90" width="155" height="40" rx="12" fill="#d1fae5"/>
+  <text x="586" y="116" font-size="14" font-weight="700" fill="#065f46" text-anchor="middle">Mem0 / Letta / Zep</text>
+  <text x="586" y="152" font-size="11" fill="#374151" text-anchor="middle">Mem0 最轻向量</text>
+  <text x="586" y="178" font-size="11" fill="#374151" text-anchor="middle">Letta 运行时</text>
+  <text x="586" y="198" font-size="11" fill="#374151" text-anchor="middle">自编辑内存块</text>
+  <text x="586" y="224" font-size="11" fill="#374151" text-anchor="middle">Zep 时序图谱</text>
+  <text x="586" y="250" font-size="11" fill="#374151" text-anchor="middle">valid_at /</text>
+  <text x="586" y="270" font-size="11" fill="#374151" text-anchor="middle">invalid_at</text>
+  <text x="586" y="296" font-size="11" fill="#374151" text-anchor="middle">对应 §2 映射表</text>
+  <text x="586" y="316" font-size="11" fill="#374151" text-anchor="middle">bolt-on 任何 agent</text>
+</svg>
