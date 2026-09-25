@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <rect x="0" y="0" width="680" height="300" fill="#ffffff"/>
+  <text x="340" y="36" font-size="22" font-weight="700" fill="#1f2937" text-anchor="middle">每轮窗口装配流水线</text>
+  <text x="340" y="60" font-size="13" fill="#6b7280" text-anchor="middle">采集 → 排序与选择 → 摆放 → 压缩与裁剪 → 跨轮刷新</text>
+
+  <rect x="24" y="110" width="116" height="92" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+  <text x="82" y="138" font-size="14" font-weight="700" fill="#0f766e" text-anchor="middle">1 采集</text>
+  <text x="82" y="164" font-size="11" fill="#6b7280" text-anchor="middle">从所有源</text>
+  <text x="82" y="182" font-size="11" fill="#6b7280" text-anchor="middle">拉候选内容</text>
+
+  <rect x="152" y="110" width="116" height="92" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+  <text x="210" y="138" font-size="14" font-weight="700" fill="#0f766e" text-anchor="middle">2 排序选择</text>
+  <text x="210" y="164" font-size="11" fill="#6b7280" text-anchor="middle">预算内打分</text>
+  <text x="210" y="182" font-size="11" fill="#6b7280" text-anchor="middle">留最近 N</text>
+
+  <rect x="280" y="110" width="116" height="92" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+  <text x="338" y="138" font-size="14" font-weight="700" fill="#0f766e" text-anchor="middle">3 摆放</text>
+  <text x="338" y="164" font-size="11" fill="#6b7280" text-anchor="middle">指令放头尾</text>
+  <text x="338" y="182" font-size="11" fill="#6b7280" text-anchor="middle">历史放居中</text>
+
+  <rect x="408" y="110" width="116" height="92" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="466" y="138" font-size="14" font-weight="700" fill="#92400e" text-anchor="middle">4 压缩裁剪</text>
+  <text x="466" y="164" font-size="11" fill="#6b7280" text-anchor="middle">滚动摘要</text>
+  <text x="466" y="182" font-size="11" fill="#6b7280" text-anchor="middle">滑动窗口</text>
+
+  <rect x="536" y="110" width="116" height="92" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="594" y="138" font-size="14" font-weight="700" fill="#92400e" text-anchor="middle">5 跨轮刷新</text>
+  <text x="594" y="164" font-size="11" fill="#6b7280" text-anchor="middle">续上状态</text>
+  <text x="594" y="182" font-size="11" fill="#6b7280" text-anchor="middle">与滚动摘要</text>
+
+  <path d="M140 156 L150 156" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+  <path d="M268 156 L278 156" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+  <path d="M396 156 L406 156" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+  <path d="M524 156 L534 156" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+
+  <path d="M594 202 C 594 244, 82 244, 82 202" stroke="#7c3aed" stroke-width="1.8" fill="none" stroke-dasharray="6 4" marker-end="url(#ahp)"/>
+  <text x="340" y="238" font-size="11" fill="#5b21b6" text-anchor="middle">下一轮（refresh 把状态与摘要交回 gather）</text>
+
+  <text x="340" y="278" font-size="12" fill="#374151" text-anchor="middle">与第 8 期记忆生命周期（捕获→存储→检索→注入→遗忘）是同一思路的两面</text>
+
+  <defs>
+    <marker id="ah" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#9ca3af"/>
+    </marker>
+    <marker id="ahp" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#7c3aed"/>
+    </marker>
+  </defs>
+</svg>
