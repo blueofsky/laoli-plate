@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 470" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <rect x="0" y="0" width="680" height="470" fill="#ffffff"/>
+  <text x="340" y="36" font-size="22" font-weight="700" fill="#1f2937" text-anchor="middle">Context Window 的七个 Zone</text>
+  <text x="340" y="62" font-size="13" fill="#6b7280" text-anchor="middle">常驻 / 动态 / 条件三类着色；系统指令与工具定义每轮固定，历史与结果最易膨胀</text>
+
+  <rect x="50" y="86" width="580" height="330" rx="14" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+
+  <rect x="66" y="104" width="548" height="38" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="84" y="128" font-size="14" font-weight="700" fill="#0f766e">系统指令区</text>
+  <text x="250" y="128" font-size="11" fill="#6b7280">开发者预置 + Skill</text>
+  <text x="600" y="128" font-size="11" fill="#6b7280" text-anchor="end">每轮常驻</text>
+
+  <rect x="66" y="148" width="548" height="38" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="84" y="172" font-size="14" font-weight="700" fill="#92400e">检索知识区</text>
+  <text x="250" y="172" font-size="11" fill="#6b7280">Memory / RAG / Skill</text>
+  <text x="600" y="172" font-size="11" fill="#6b7280" text-anchor="end">每轮动态</text>
+
+  <rect x="66" y="192" width="548" height="38" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="84" y="216" font-size="14" font-weight="700" fill="#92400e">对话历史区</text>
+  <text x="250" y="216" font-size="11" fill="#6b7280">消息与事件</text>
+  <text x="600" y="216" font-size="11" fill="#6b7280" text-anchor="end">随轮增长</text>
+
+  <rect x="66" y="236" width="548" height="38" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="84" y="260" font-size="14" font-weight="700" fill="#0f766e">工具定义区</text>
+  <text x="250" y="260" font-size="11" fill="#6b7280">工具调用 / MCP</text>
+  <text x="600" y="260" font-size="11" fill="#6b7280" text-anchor="end">每轮常驻</text>
+
+  <rect x="66" y="280" width="548" height="38" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="84" y="304" font-size="14" font-weight="700" fill="#92400e">工具结果区</text>
+  <text x="250" y="304" font-size="11" fill="#6b7280">工具调用 / MCP</text>
+  <text x="600" y="304" font-size="11" fill="#6b7280" text-anchor="end">每轮动态</text>
+
+  <rect x="66" y="324" width="548" height="38" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="84" y="348" font-size="14" font-weight="700" fill="#5b21b6">工作草稿区</text>
+  <text x="250" y="348" font-size="11" fill="#6b7280">agent 自写</text>
+  <text x="600" y="348" font-size="11" fill="#6b7280" text-anchor="end">视启用而定</text>
+
+  <rect x="66" y="368" width="548" height="38" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="84" y="392" font-size="14" font-weight="700" fill="#5b21b6">状态快照区</text>
+  <text x="250" y="392" font-size="11" fill="#6b7280">状态管理</text>
+  <text x="600" y="392" font-size="11" fill="#6b7280" text-anchor="end">视续传而定</text>
+
+  <rect x="80" y="436" width="14" height="14" rx="3" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="100" y="447" font-size="11" fill="#374151">常驻（每轮固定）</text>
+  <rect x="260" y="436" width="14" height="14" rx="3" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="280" y="447" font-size="11" fill="#374151">动态（每轮变化）</text>
+  <rect x="440" y="436" width="14" height="14" rx="3" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="460" y="447" font-size="11" fill="#374151">条件（视启用 / 续传）</text>
+</svg>
