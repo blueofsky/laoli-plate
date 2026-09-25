@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 410" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <rect width="680" height="410" fill="#ffffff"/>
+  <text x="340" y="34" font-size="20" font-weight="700" fill="#1f2937" text-anchor="middle">四框架对照：权限 / 沙箱 / HITL</text>
+
+  <rect x="30" y="64" width="150" height="34" rx="8" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+  <text x="105" y="86" font-size="13" font-weight="700" fill="#374151" text-anchor="middle">框架</text>
+  <rect x="188" y="64" width="160" height="34" rx="8" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+  <text x="268" y="86" font-size="13" font-weight="700" fill="#374151" text-anchor="middle">权限</text>
+  <rect x="352" y="64" width="160" height="34" rx="8" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+  <text x="432" y="86" font-size="13" font-weight="700" fill="#374151" text-anchor="middle">沙箱</text>
+  <rect x="516" y="64" width="144" height="34" rx="8" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+  <text x="588" y="86" font-size="13" font-weight="700" fill="#374151" text-anchor="middle">HITL</text>
+
+  <g>
+    <rect x="30" y="104" width="150" height="56" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+    <text x="105" y="137" font-size="13" font-weight="700" fill="#0f766e" text-anchor="middle">OpenAI</text>
+    <rect x="188" y="104" width="160" height="56" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <text x="268" y="137" font-size="12" fill="#374151" text-anchor="middle">needs_approval</text>
+    <rect x="352" y="104" width="160" height="56" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <text x="432" y="137" font-size="12" fill="#374151" text-anchor="middle">SandboxAgent</text>
+    <text x="432" y="153" font-size="11" fill="#6b7280" text-anchor="middle">+ Manifest</text>
+    <rect x="516" y="104" width="144" height="56" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <text x="588" y="130" font-size="11" fill="#374151" text-anchor="middle">interruptions</text>
+    <text x="588" y="147" font-size="11" fill="#374151" text-anchor="middle">+ approve/reject</text>
+  </g>
+
+  <g>
+    <rect x="30" y="166" width="150" height="56" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+    <text x="105" y="199" font-size="13" font-weight="700" fill="#92400e" text-anchor="middle">LangGraph</text>
+    <rect x="188" y="166" width="160" height="56" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <text x="268" y="199" font-size="12" fill="#374151" text-anchor="middle">非内建·中间件</text>
+    <rect x="352" y="166" width="160" height="56" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <text x="432" y="199" font-size="12" fill="#374151" text-anchor="middle">外部 Docker / E2B</text>
+    <rect x="516" y="166" width="144" height="56" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <text x="588" y="192" font-size="11" fill="#374151" text-anchor="middle">interrupt()</text>
+    <text x="588" y="209" font-size="11" fill="#374151" text-anchor="middle">+ Command(resume)</text>
+  </g>
+
+  <g>
+    <rect x="30" y="228" width="150" height="56" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+    <text x="105" y="261" font-size="13" font-weight="700" fill="#0f766e" text-anchor="middle">AgentScope</text>
+    <rect x="188" y="228" width="160" height="56" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <text x="268" y="254" font-size="12" fill="#374151" text-anchor="middle">PermissionEngine</text>
+    <text x="268" y="271" font-size="11" fill="#6b7280" text-anchor="middle">三态 + 5 档</text>
+    <rect x="352" y="228" width="160" height="56" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <text x="432" y="261" font-size="12" fill="#374151" text-anchor="middle">workspace_manager</text>
+    <rect x="516" y="228" width="144" height="56" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <text x="588" y="254" font-size="12" fill="#374151" text-anchor="middle">敏感操作</text>
+    <text x="588" y="271" font-size="11" fill="#374151" text-anchor="middle">自动 ASK</text>
+  </g>
+
+  <g>
+    <rect x="30" y="290" width="150" height="56" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+    <text x="105" y="323" font-size="13" font-weight="700" fill="#5b21b6" text-anchor="middle">AutoGen</text>
+    <rect x="188" y="290" width="160" height="56" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <text x="268" y="323" font-size="12" fill="#374151" text-anchor="middle">编排层自实现</text>
+    <rect x="352" y="290" width="160" height="56" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <text x="432" y="316" font-size="11" fill="#374151" text-anchor="middle">Docker</text>
+    <text x="432" y="333" font-size="11" fill="#374151" text-anchor="middle">CommandLineExecutor</text>
+    <rect x="516" y="290" width="144" height="56" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+    <text x="588" y="316" font-size="12" fill="#374151" text-anchor="middle">RoutedAgent</text>
+    <text x="588" y="333" font-size="11" fill="#374151" text-anchor="middle">拦截 / 审批</text>
+  </g>
+
+  <text x="340" y="378" font-size="12" fill="#374151" text-anchor="middle">AgentScope 权限内建；OpenAI HITL+沙箱原语；LangGraph 只给 interrupt/resume；AutoGen 沙箱最强</text>
+
+  <defs>
+    <marker id="ah" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#9ca3af"/>
+    </marker>
+  </defs>
+</svg>
