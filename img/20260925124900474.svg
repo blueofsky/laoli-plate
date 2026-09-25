@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 430" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <rect width="680" height="430" fill="#ffffff"/>
+  <text x="340" y="34" font-size="20" font-weight="700" fill="#1f2937" text-anchor="middle">三道闸的分层：策略层 / 执行层 / 判断层</text>
+
+  <text x="46" y="62" font-size="12" fill="#6b7280" text-anchor="middle">执行前</text>
+  <path d="M46 78 L46 352" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+  <text x="46" y="398" font-size="12" fill="#6b7280" text-anchor="middle">执行</text>
+
+  <rect x="110" y="70" width="450" height="80" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+  <text x="132" y="102" font-size="15" font-weight="700" fill="#0f766e">权限（策略层）</text>
+  <text x="132" y="126" font-size="12" fill="#0f766e">能不能做 · allow / deny · 落在中间件「执行前」切面</text>
+
+  <rect x="110" y="168" width="450" height="80" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="132" y="200" font-size="15" font-weight="700" fill="#92400e">沙箱（执行层）</text>
+  <text x="132" y="224" font-size="12" fill="#92400e">做坏多大范围 · 隔离 fs / net / 凭证 / 进程 · blast radius</text>
+
+  <rect x="110" y="266" width="450" height="80" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <text x="132" y="298" font-size="15" font-weight="700" fill="#5b21b6">HITL（判断层）</text>
+  <text x="132" y="322" font-size="12" fill="#5b21b6">谁拍板 · 不可逆 / 高代价动作执行前暂停等人签字</text>
+
+  <rect x="580" y="70" width="84" height="276" rx="10" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+  <text x="622" y="188" font-size="12" fill="#334155" text-anchor="middle">审计日志</text>
+  <text x="622" y="208" font-size="11" fill="#334155" text-anchor="middle">（贯穿 ·</text>
+  <text x="622" y="226" font-size="11" fill="#334155" text-anchor="middle">事后取证）</text>
+
+  <text x="330" y="384" font-size="13" fill="#374151" text-anchor="middle">三者正交互补：权限说 yes/no，沙箱给 yes 设上限，HITL 在 yes 前插人</text>
+
+  <defs>
+    <marker id="ah" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#9ca3af"/>
+    </marker>
+  </defs>
+</svg>
