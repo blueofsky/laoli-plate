@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 450" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <rect x="0" y="0" width="680" height="450" fill="#ffffff"/>
+  <text x="340" y="36" font-size="22" font-weight="700" fill="#1f2937" text-anchor="middle">第 1–8 期子系统 → 同一个窗口（总装配台）</text>
+  <text x="340" y="62" font-size="13" fill="#6b7280" text-anchor="middle">上下文工程不是第九个孤立子系统，是前八个的总装配台</text>
+
+  <rect x="18" y="92" width="74" height="42" rx="10" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="55" y="110" font-size="11" fill="#6b7280" text-anchor="middle">1</text>
+  <text x="55" y="128" font-size="13" font-weight="700" fill="#0f766e" text-anchor="middle">Loop</text>
+
+  <rect x="98" y="92" width="74" height="42" rx="10" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="135" y="110" font-size="11" fill="#6b7280" text-anchor="middle">2</text>
+  <text x="135" y="128" font-size="13" font-weight="700" fill="#0f766e" text-anchor="middle">状态</text>
+
+  <rect x="178" y="92" width="74" height="42" rx="10" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="215" y="110" font-size="11" fill="#6b7280" text-anchor="middle">3</text>
+  <text x="215" y="128" font-size="13" font-weight="700" fill="#0f766e" text-anchor="middle">消息</text>
+
+  <rect x="258" y="92" width="74" height="42" rx="10" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="295" y="110" font-size="11" fill="#6b7280" text-anchor="middle">4</text>
+  <text x="295" y="128" font-size="13" font-weight="700" fill="#0f766e" text-anchor="middle">中间件</text>
+
+  <rect x="338" y="92" width="74" height="42" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="375" y="110" font-size="11" fill="#6b7280" text-anchor="middle">5</text>
+  <text x="375" y="128" font-size="13" font-weight="700" fill="#92400e" text-anchor="middle">工具</text>
+
+  <rect x="418" y="92" width="74" height="42" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="455" y="110" font-size="11" fill="#6b7280" text-anchor="middle">6</text>
+  <text x="455" y="128" font-size="13" font-weight="700" fill="#92400e" text-anchor="middle">MCP</text>
+
+  <rect x="498" y="92" width="74" height="42" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="535" y="110" font-size="11" fill="#6b7280" text-anchor="middle">7</text>
+  <text x="535" y="128" font-size="13" font-weight="700" fill="#92400e" text-anchor="middle">Skill</text>
+
+  <rect x="578" y="92" width="74" height="42" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="615" y="110" font-size="11" fill="#6b7280" text-anchor="middle">8</text>
+  <text x="615" y="128" font-size="13" font-weight="700" fill="#5b21b6" text-anchor="middle">Memory</text>
+
+  <rect x="110" y="300" width="460" height="104" rx="14" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <text x="340" y="334" font-size="16" font-weight="700" fill="#1f2937" text-anchor="middle">Context Window（总装配台）</text>
+  <text x="340" y="362" font-size="12" fill="#6b7280" text-anchor="middle">系统指令 / 检索知识 / 对话历史 / 工具定义 / 工具结果 / 工作草稿 / 状态快照</text>
+  <text x="340" y="384" font-size="12" fill="#0f766e" text-anchor="middle">→ 一次确定性装配，送进模型</text>
+
+  <path d="M55 134 L150 300" stroke="#9ca3af" stroke-width="1.5" fill="none" marker-end="url(#ah)"/>
+  <path d="M135 134 L202 300" stroke="#9ca3af" stroke-width="1.5" fill="none" marker-end="url(#ah)"/>
+  <path d="M215 134 L254 300" stroke="#9ca3af" stroke-width="1.5" fill="none" marker-end="url(#ah)"/>
+  <path d="M295 134 L306 300" stroke="#9ca3af" stroke-width="1.5" fill="none" marker-end="url(#ah)"/>
+  <path d="M375 134 L358 300" stroke="#9ca3af" stroke-width="1.5" fill="none" marker-end="url(#ah)"/>
+  <path d="M455 134 L410 300" stroke="#9ca3af" stroke-width="1.5" fill="none" marker-end="url(#ah)"/>
+  <path d="M535 134 L462 300" stroke="#9ca3af" stroke-width="1.5" fill="none" marker-end="url(#ah)"/>
+  <path d="M615 134 L514 300" stroke="#9ca3af" stroke-width="1.5" fill="none" marker-end="url(#ah)"/>
+
+  <text x="340" y="432" font-size="12" fill="#374151" text-anchor="middle">每轮的窗口 = 前八篇所有子系统产出的汇合</text>
+
+  <defs>
+    <marker id="ah" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#9ca3af"/>
+    </marker>
+  </defs>
+</svg>
