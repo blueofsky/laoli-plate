@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 440" font-family="PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="680" height="440" fill="#ffffff"/>
+  <text x="340" y="28" text-anchor="middle" font-size="17" fill="#0f766e" font-weight="bold">执行环境的两件事：agent 逻辑不变，变的是「在哪执行」</text>
+  <defs>
+    <marker id="c" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#475569"/></marker>
+  </defs>
+
+  <rect x="180" y="46" width="320" height="42" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+  <text x="340" y="66" text-anchor="middle" font-size="12" fill="#334155" font-weight="bold">agent 逻辑</text>
+  <text x="340" y="82" text-anchor="middle" font-size="10" fill="#334155">不改一行</text>
+
+  <line x1="280" y1="88" x2="192" y2="121" stroke="#475569" stroke-width="1.8" marker-end="url(#c)"/>
+  <line x1="400" y1="88" x2="488" y2="121" stroke="#475569" stroke-width="1.8" marker-end="url(#c)"/>
+
+  <rect x="30" y="122" width="300" height="240" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+  <text x="46" y="148" font-size="12" fill="#92400e" font-weight="bold">问题一 · 文件与产物放在哪</text>
+  <text x="46" y="168" font-size="10" fill="#a16207">落点形态不齐，三种做法并存</text>
+
+  <text x="46" y="204" font-size="10.5" fill="#92400e" font-weight="bold">可替换接口</text>
+  <text x="46" y="220" font-size="9.5" fill="#a16207">deepagents Backend、ADK ArtifactService</text>
+
+  <text x="46" y="256" font-size="10.5" fill="#92400e" font-weight="bold">目录约定</text>
+  <text x="46" y="272" font-size="9.5" fill="#a16207">Claude /workspace、/mnt/session/outputs</text>
+
+  <text x="46" y="308" font-size="10.5" fill="#92400e" font-weight="bold">配置参数</text>
+  <text x="46" y="324" font-size="9.5" fill="#a16207">OpenAI Manifest、AutoGen work_dir</text>
+
+  <rect x="350" y="122" width="300" height="240" rx="10" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="366" y="148" font-size="12" fill="#0f766e" font-weight="bold">问题二 · 代码在哪跑</text>
+  <text x="366" y="168" font-size="10" fill="#0d9488">各家都收成可替换接口</text>
+
+  <text x="366" y="194" font-size="10.5" fill="#0f766e" font-weight="bold">OpenAI Agents SDK</text>
+  <text x="366" y="208" font-size="9.5" fill="#0d9488">sandbox client</text>
+  <text x="366" y="228" font-size="10.5" fill="#0f766e" font-weight="bold">AgentScope 2.0</text>
+  <text x="366" y="242" font-size="9.5" fill="#0d9488">Workspace，内含 execution backend</text>
+  <text x="366" y="262" font-size="10.5" fill="#0f766e" font-weight="bold">smolagents</text>
+  <text x="366" y="276" font-size="9.5" fill="#0d9488">PythonExecutor</text>
+  <text x="366" y="296" font-size="10.5" fill="#0f766e" font-weight="bold">deepagents</text>
+  <text x="366" y="310" font-size="9.5" fill="#0d9488">sandbox backend</text>
+  <text x="366" y="330" font-size="10.5" fill="#0f766e" font-weight="bold">AutoGen / AG2</text>
+  <text x="366" y="344" font-size="9.5" fill="#0d9488">CodeExecutor</text>
+
+  <rect x="30" y="378" width="620" height="48" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="340" y="408" text-anchor="middle" font-size="10" fill="#475569">两个问题分开替换——换存储不牵动运行时，换运行时不牵动存储</text>
+</svg>
