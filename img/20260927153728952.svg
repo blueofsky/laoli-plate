@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" font-family="PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="680" height="360" fill="#ffffff"/>
+  <text x="340" y="30" text-anchor="middle" font-size="18" fill="#0f766e" font-weight="bold">没有执行环境 vs 有执行环境</text>
+
+  <rect x="36" y="58" width="290" height="246" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+  <text x="181" y="84" text-anchor="middle" font-size="14" fill="#92400e" font-weight="bold">没有执行环境</text>
+  <rect x="56" y="100" width="250" height="32" rx="6" fill="#ffffff" stroke="#d97706"/>
+  <text x="181" y="121" text-anchor="middle" font-size="11" fill="#92400e">命令跑在宿主，位置写死</text>
+  <rect x="56" y="140" width="250" height="32" rx="6" fill="#ffffff" stroke="#d97706"/>
+  <text x="181" y="161" text-anchor="middle" font-size="11" fill="#92400e">临时文件与长期资产同目录</text>
+  <rect x="56" y="180" width="250" height="32" rx="6" fill="#ffffff" stroke="#d97706"/>
+  <text x="181" y="201" text-anchor="middle" font-size="11" fill="#92400e">大输出直接进上下文</text>
+  <rect x="56" y="220" width="250" height="32" rx="6" fill="#ffffff" stroke="#d97706"/>
+  <text x="181" y="241" text-anchor="middle" font-size="11" fill="#92400e">没有终端，交互命令阻塞</text>
+  <rect x="56" y="260" width="250" height="32" rx="6" fill="#ffffff" stroke="#d97706"/>
+  <text x="181" y="281" text-anchor="middle" font-size="11" fill="#92400e">失败后只能重建</text>
+
+  <rect x="354" y="58" width="290" height="246" rx="8" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="499" y="84" text-anchor="middle" font-size="14" fill="#0f766e" font-weight="bold">有执行环境</text>
+  <rect x="374" y="100" width="250" height="32" rx="6" fill="#ffffff" stroke="#0d9488"/>
+  <text x="499" y="121" text-anchor="middle" font-size="11" fill="#0f766e">命令跑在可丢弃的环境里</text>
+  <rect x="374" y="140" width="250" height="32" rx="6" fill="#ffffff" stroke="#0d9488"/>
+  <text x="499" y="161" text-anchor="middle" font-size="11" fill="#0f766e">临时与长期资产按目录分流</text>
+  <rect x="374" y="180" width="250" height="32" rx="6" fill="#ffffff" stroke="#0d9488"/>
+  <text x="499" y="201" text-anchor="middle" font-size="11" fill="#0f766e">大输出落盘，窗口只留指针</text>
+  <rect x="374" y="220" width="250" height="32" rx="6" fill="#ffffff" stroke="#0d9488"/>
+  <text x="499" y="241" text-anchor="middle" font-size="11" fill="#0f766e">真终端会话，可交互可打断</text>
+  <rect x="374" y="260" width="250" height="32" rx="6" fill="#ffffff" stroke="#0d9488"/>
+  <text x="499" y="281" text-anchor="middle" font-size="11" fill="#0f766e">产物可交付，环境可回滚</text>
+
+  <text x="340" y="340" text-anchor="middle" font-size="12" fill="#64748b">前者把执行位置写死在应用里，后者把执行环境变成可替换、可丢弃的一层</text>
+</svg>
