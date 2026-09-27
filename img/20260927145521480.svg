@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" font-family="PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="680" height="380" fill="#ffffff"/>
+  <text x="340" y="30" text-anchor="middle" font-size="18" fill="#0f766e" font-weight="bold">执行环境的抽象层：一管文件放哪，一管在哪跑</text>
+  <defs>
+    <marker id="c" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#475569"/></marker>
+  </defs>
+
+  <rect x="30" y="158" width="112" height="64" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+  <text x="86" y="184" text-anchor="middle" font-size="12" fill="#334155" font-weight="bold">agent 逻辑</text>
+  <text x="86" y="205" text-anchor="middle" font-size="10" fill="#334155">不改一行</text>
+
+  <rect x="190" y="58" width="460" height="104" rx="10" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="420" y="82" text-anchor="middle" font-size="12" fill="#0f766e" font-weight="bold">运行时抽象 · Workspace</text>
+  <text x="420" y="100" text-anchor="middle" font-size="10" fill="#0f766e">把执行环境整个抽象成可替换的组件</text>
+  <rect x="206" y="116" width="76" height="24" rx="5" fill="#ffffff" stroke="#0d9488"/>
+  <text x="244" y="132" text-anchor="middle" font-size="10" fill="#0f766e">Local</text>
+  <rect x="294" y="116" width="76" height="24" rx="5" fill="#ffffff" stroke="#0d9488"/>
+  <text x="332" y="132" text-anchor="middle" font-size="10" fill="#0f766e">Docker</text>
+  <rect x="382" y="116" width="76" height="24" rx="5" fill="#ffffff" stroke="#0d9488"/>
+  <text x="420" y="132" text-anchor="middle" font-size="10" fill="#0f766e">E2B</text>
+  <rect x="470" y="116" width="76" height="24" rx="5" fill="#ffffff" stroke="#0d9488"/>
+  <text x="508" y="132" text-anchor="middle" font-size="10" fill="#0f766e">K8s</text>
+  <rect x="558" y="116" width="76" height="24" rx="5" fill="#ffffff" stroke="#0d9488"/>
+  <text x="596" y="132" text-anchor="middle" font-size="10" fill="#0f766e">…</text>
+  <text x="420" y="156" text-anchor="middle" font-size="10" fill="#0f766e">沙箱后端可换，同一份接口</text>
+
+  <rect x="190" y="208" width="460" height="124" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+  <text x="420" y="232" text-anchor="middle" font-size="12" fill="#92400e" font-weight="bold">存储抽象 · Backend</text>
+  <text x="420" y="250" text-anchor="middle" font-size="10" fill="#92400e">文件与产物放哪：临时、持久、真实磁盘</text>
+  <rect x="206" y="266" width="100" height="28" rx="5" fill="#ffffff" stroke="#d97706"/>
+  <text x="256" y="284" text-anchor="middle" font-size="9.5" fill="#92400e">State</text>
+  <rect x="319" y="266" width="100" height="28" rx="5" fill="#ffffff" stroke="#d97706"/>
+  <text x="369" y="284" text-anchor="middle" font-size="9.5" fill="#92400e">Filesystem</text>
+  <rect x="432" y="266" width="100" height="28" rx="5" fill="#ffffff" stroke="#d97706"/>
+  <text x="482" y="284" text-anchor="middle" font-size="9.5" fill="#92400e">Store</text>
+  <rect x="545" y="266" width="100" height="28" rx="5" fill="#ffffff" stroke="#d97706"/>
+  <text x="595" y="284" text-anchor="middle" font-size="9.5" fill="#92400e">Composite</text>
+  <text x="420" y="318" text-anchor="middle" font-size="10" fill="#92400e">路径即策略：/tmp 临时、/memories 持久</text>
+
+  <line x1="142" y1="180" x2="188" y2="112" stroke="#475569" stroke-width="2" marker-end="url(#c)"/>
+  <line x1="142" y1="200" x2="188" y2="268" stroke="#475569" stroke-width="2" marker-end="url(#c)"/>
+
+  <text x="340" y="360" text-anchor="middle" font-size="12" fill="#64748b">两层各解一半，拼起来才是完整的执行环境</text>
+</svg>
