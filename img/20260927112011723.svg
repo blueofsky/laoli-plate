@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" font-family="PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="680" height="340" fill="#ffffff"/>
+  <text x="340" y="28" text-anchor="middle" font-size="18" fill="#0f766e" font-weight="bold">计划的表示与持有 + replanning 回路</text>
+  <defs>
+    <marker id="g" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#0d9488"/></marker>
+    <marker id="h" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="30" y="55" width="180" height="56" rx="8" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="120" y="80" text-anchor="middle" font-size="13" fill="#0f766e" font-weight="bold">scratchpad</text>
+  <text x="120" y="100" text-anchor="middle" font-size="10" fill="#0f766e">模型草稿区</text>
+  <rect x="250" y="55" width="180" height="56" rx="8" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="340" y="80" text-anchor="middle" font-size="13" fill="#0f766e" font-weight="bold">会话态</text>
+  <text x="340" y="100" text-anchor="middle" font-size="10" fill="#0f766e">框架管理</text>
+  <rect x="470" y="55" width="180" height="56" rx="8" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="560" y="80" text-anchor="middle" font-size="13" fill="#0f766e" font-weight="bold">上下文窗口</text>
+  <text x="560" y="100" text-anchor="middle" font-size="10" fill="#0f766e">拼进每轮 prompt</text>
+  <rect x="260" y="150" width="160" height="40" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+  <text x="340" y="175" text-anchor="middle" font-size="13" fill="#0f766e" font-weight="bold">计划</text>
+  <rect x="260" y="210" width="160" height="40" rx="8" fill="#ffffff" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="340" y="235" text-anchor="middle" font-size="13" fill="#0f766e">执行</text>
+  <line x1="340" y1="190" x2="340" y2="210" stroke="#0d9488" stroke-width="1.5" marker-end="url(#g)"/>
+  <rect x="260" y="270" width="160" height="40" rx="8" fill="#ffffff" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="340" y="295" text-anchor="middle" font-size="13" fill="#0f766e">重规划</text>
+  <line x1="340" y1="250" x2="340" y2="270" stroke="#0d9488" stroke-width="1.5" marker-end="url(#g)"/>
+  <line x1="260" y1="290" x2="200" y2="290" stroke="#0d9488" stroke-width="1.5" marker-end="url(#g)"/>
+  <line x1="200" y1="290" x2="200" y2="195" stroke="#0d9488" stroke-width="1.5" marker-end="url(#g)"/>
+  <line x1="200" y1="195" x2="260" y2="170" stroke="#0d9488" stroke-width="1.5" marker-end="url(#g)"/>
+  <rect x="450" y="210" width="170" height="40" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <text x="535" y="235" text-anchor="middle" font-size="12" fill="#5b21b6" font-weight="bold">深度思考（触发点）</text>
+  <line x1="420" y1="230" x2="450" y2="230" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#h)"/>
+  <line x1="535" y1="250" x2="535" y2="270" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#h)"/>
+  <text x="535" y="300" text-anchor="middle" font-size="10" fill="#5b21b6">遇失败/偏离时</text>
+  <text x="535" y="316" text-anchor="middle" font-size="10" fill="#5b21b6">升级 effort 做根因</text>
+</svg>
