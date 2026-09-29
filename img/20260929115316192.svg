@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 390" font-family="PingFang SC, Microsoft YaHei, sans-serif">
+  <rect x="0" y="0" width="680" height="390" fill="#ffffff"/>
+  <!-- 父上下文 -->
+  <rect x="40" y="50" width="250" height="250" rx="8" fill="#f0fdfa" stroke="#0f766e" stroke-width="2"/>
+  <text x="165" y="78" text-anchor="middle" font-size="17" font-weight="bold" fill="#0f766e">父上下文</text>
+  <text x="60" y="120" font-size="13" fill="#334155">主对话历史 / 当前任务</text>
+  <text x="60" y="280" font-size="13" fill="#0f766e">← 只收到摘要</text>
+
+  <!-- 子上下文 -->
+  <rect x="390" y="50" width="250" height="250" rx="8" fill="#f0fdfa" stroke="#0f766e" stroke-width="2"/>
+  <text x="515" y="78" text-anchor="middle" font-size="17" font-weight="bold" fill="#0f766e">子上下文（独立、干净起步）</text>
+  <rect x="408" y="100" width="214" height="64" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="515" y="128" text-anchor="middle" font-size="12.5" fill="#134e4a">② 隔离：中间产物留在子上下文内</text>
+  <text x="515" y="150" text-anchor="middle" font-size="11.5" fill="#475569">（读到的文件 / 日志 / 试错轨迹）</text>
+  <text x="408" y="210" font-size="12.5" fill="#134e4a">③ 约束：tools / model /</text>
+  <text x="408" y="228" font-size="12.5" fill="#134e4a">permissionMode 收窄</text>
+  <text x="408" y="282" font-size="12.5" fill="#92400e">⑤ 单次 · 无状态</text>
+  <text x="408" y="298" font-size="11" fill="#92400e">（或可带跨会话 memory）</text>
+
+  <!-- ① 触发 -->
+  <line x1="290" y1="175" x2="388" y2="175" stroke="#0d9488" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="339" y="162" text-anchor="middle" font-size="12.5" fill="#0f766e">① 触发：委派自包含子任务</text>
+
+  <!-- ④ 返回 -->
+  <line x1="390" y1="255" x2="292" y2="255" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrowA)"/>
+  <text x="341" y="248" text-anchor="middle" font-size="12.5" fill="#b45309">④ 返回：仅摘要回父</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#0d9488"/>
+    </marker>
+    <marker id="arrowA" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#d97706"/>
+    </marker>
+  </defs>
+</svg>
