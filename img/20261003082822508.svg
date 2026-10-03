@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 510" font-family="PingFang SC, Microsoft YaHei, sans-serif">
+  <rect x="0" y="0" width="680" height="510" fill="#ffffff"/>
+  <defs>
+    <marker id="mTeal" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 z" fill="#0d9488"/>
+    </marker>
+    <marker id="mPurple" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 z" fill="#7c3aed"/>
+    </marker>
+    <marker id="mGray" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect x="90" y="24" width="320" height="40" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="250" y="49" text-anchor="middle" font-size="12.5" fill="#134e4a">用户任务 + System Prompt + 工具列表</text>
+  <line x1="250" y1="64" x2="250" y2="94" stroke="#0d9488" stroke-width="1.5" marker-end="url(#mTeal)"/>
+
+  <rect x="90" y="96" width="320" height="40" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="250" y="121" text-anchor="middle" font-size="12.5" fill="#134e4a">组装本轮 messages</text>
+  <line x1="250" y1="136" x2="250" y2="166" stroke="#0d9488" stroke-width="1.5" marker-end="url(#mTeal)"/>
+
+  <rect x="90" y="168" width="320" height="40" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="250" y="193" text-anchor="middle" font-size="12.5" fill="#4c1d95">调用 LLM</text>
+  <line x1="250" y1="208" x2="250" y2="238" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#mPurple)"/>
+
+  <rect x="110" y="240" width="280" height="46" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="250" y="268" text-anchor="middle" font-size="12.5" fill="#4c1d95">本轮有 tool_calls?</text>
+
+  <line x1="390" y1="263" x2="456" y2="263" stroke="#0d9488" stroke-width="1.5" marker-end="url(#mTeal)"/>
+  <text x="424" y="253" text-anchor="middle" font-size="11.5" fill="#0f766e">否</text>
+  <rect x="458" y="240" width="200" height="46" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="558" y="268" text-anchor="middle" font-size="12.5" fill="#134e4a">返回最终答案并结束</text>
+
+  <line x1="250" y1="286" x2="250" y2="330" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#mGray)"/>
+  <text x="262" y="312" font-size="11.5" fill="#6d28d9">是</text>
+
+  <rect x="90" y="332" width="320" height="40" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="250" y="357" text-anchor="middle" font-size="12.5" fill="#134e4a">harness 执行工具</text>
+  <line x1="250" y1="372" x2="250" y2="402" stroke="#0d9488" stroke-width="1.5" marker-end="url(#mTeal)"/>
+
+  <rect x="90" y="404" width="320" height="40" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="250" y="429" text-anchor="middle" font-size="12.5" fill="#134e4a">结果作为 observation 写回 messages</text>
+
+  <path d="M90,424 L50,424 L50,116 L88,116" fill="none" stroke="#d97706" stroke-width="1.8" marker-end="url(#mGray)"/>
+  <text x="44" y="262" text-anchor="end" font-size="11.5" fill="#b45309">每轮</text>
+  <text x="44" y="280" text-anchor="end" font-size="11.5" fill="#b45309">重跑</text>
+
+  <text x="340" y="468" text-anchor="middle" font-size="11.5" fill="#475569">组装不是只在开头做一次：模型无状态调用，每轮都要把完整历史重新发过去</text>
+
+  <rect x="150" y="486" width="12" height="12" rx="2" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.2"/>
+  <text x="168" y="496" font-size="11.5" fill="#334155">harness 执行</text>
+  <rect x="330" y="486" width="12" height="12" rx="2" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.2"/>
+  <text x="348" y="496" font-size="11.5" fill="#334155">模型侧</text>
+</svg>
