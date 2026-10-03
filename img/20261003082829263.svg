@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 490" font-family="PingFang SC, Microsoft YaHei, sans-serif">
+  <rect x="0" y="0" width="680" height="490" fill="#ffffff"/>
+  <defs>
+    <marker id="mTeal" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 z" fill="#0d9488"/>
+    </marker>
+    <marker id="mPurple" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 z" fill="#7c3aed"/>
+    </marker>
+    <marker id="mGray" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 z" fill="#64748b"/>
+    </marker>
+    <marker id="mAmber" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  <!-- 用户任务 -->
+  <rect x="260" y="24" width="160" height="36" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="340" y="47" text-anchor="middle" font-size="12.5" fill="#134e4a">用户任务</text>
+  <line x1="340" y1="60" x2="340" y2="84" stroke="#0d9488" stroke-width="1.5" marker-end="url(#mTeal)"/>
+
+  <!-- 判断 -->
+  <rect x="220" y="86" width="240" height="46" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="340" y="114" text-anchor="middle" font-size="12.5" fill="#4c1d95">控制流能静态写死?</text>
+
+  <!-- 左分支：Workflow -->
+  <path d="M220,109 L140,109 L140,162" fill="none" stroke="#0d9488" stroke-width="1.5" marker-end="url(#mTeal)"/>
+  <text x="172" y="99" text-anchor="middle" font-size="11.5" fill="#0f766e">能写死</text>
+  <rect x="40" y="166" width="200" height="56" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="140" y="189" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#134e4a">Workflow</text>
+  <text x="140" y="208" text-anchor="middle" font-size="11.5" fill="#0f766e">确定性代码编排，不绕内核</text>
+
+  <!-- 右分支：Agent Loop -->
+  <path d="M460,109 L540,109 L540,162" fill="none" stroke="#0d9488" stroke-width="1.5" marker-end="url(#mTeal)"/>
+  <text x="500" y="99" text-anchor="middle" font-size="11.5" fill="#0f766e">写不死</text>
+  <rect x="440" y="166" width="200" height="40" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="540" y="191" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#134e4a">Agent Loop</text>
+
+  <!-- 护栏层（虚线框，包裹循环三步） -->
+  <rect x="424" y="216" width="232" height="220" rx="8" fill="#fff7ed" stroke="#d97706" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <line x1="540" y1="206" x2="540" y2="234" stroke="#0d9488" stroke-width="1.5" marker-end="url(#mTeal)"/>
+
+  <rect x="440" y="236" width="200" height="40" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="540" y="261" text-anchor="middle" font-size="12.5" fill="#134e4a">think：模型在输出里决策</text>
+  <line x1="540" y1="276" x2="540" y2="304" stroke="#0d9488" stroke-width="1.5" marker-end="url(#mTeal)"/>
+
+  <rect x="440" y="306" width="200" height="40" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="540" y="331" text-anchor="middle" font-size="12.5" fill="#134e4a">act：结构化 tool-calling</text>
+  <line x1="540" y1="346" x2="540" y2="374" stroke="#0d9488" stroke-width="1.5" marker-end="url(#mTeal)"/>
+
+  <rect x="440" y="376" width="200" height="40" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="540" y="401" text-anchor="middle" font-size="12.5" fill="#134e4a">observe：结果写回 messages</text>
+
+  <path d="M640,396 L664,396 L664,256 L642,256" fill="none" stroke="#0d9488" stroke-width="1.5" marker-end="url(#mTeal)"/>
+
+  <text x="540" y="458" text-anchor="middle" font-size="11.5" fill="#b45309">护栏层：步数上限·显式收工·重试退避·重复检测</text>
+
+  <!-- Loop 驱动拆分 agent -->
+  <path d="M440,186 L310,186 L310,328 L252,328" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#mGray)"/>
+  <text x="316" y="180" font-size="11.5" fill="#475569">驱动</text>
+
+  <rect x="40" y="300" width="210" height="56" rx="6" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="145" y="323" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#334155">拆分 agent</text>
+  <text x="145" y="342" text-anchor="middle" font-size="11.5" fill="#475569">看权限边界，不看能力边界</text>
+
+  <line x1="145" y1="356" x2="145" y2="396" stroke="#64748b" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#mGray)"/>
+  <text x="155" y="380" font-size="11.5" fill="#475569">落到</text>
+
+  <rect x="40" y="400" width="210" height="56" rx="6" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="145" y="423" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#334155">生产鸿沟</text>
+  <text x="145" y="442" text-anchor="middle" font-size="11.5" fill="#475569">持久化·幂等·上下文预算·eval</text>
+</svg>
