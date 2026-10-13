@@ -1,0 +1,36 @@
+<svg viewBox="0 0 328 428" width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+
+<!-- 主卡：Harness 宿主外壳整体 -->
+<rect x="4" y="4" width="320" height="410" rx="10" fill="#0C447C"/>
+<text x="16" y="24" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Harness 宿主外壳</text>
+
+<!-- Harness Core 虚线框（包裹内核层） -->
+<rect x="16" y="40" width="296" height="100" rx="8" fill="none" stroke="#F2B705" stroke-width="1.5" stroke-dasharray="6 3"/>
+<rect x="16" y="32" width="104" height="18" rx="4" fill="#F2B705"/>
+<text x="26" y="45" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="600" fill="#3D2C00">Harness Core</text>
+<rect x="28" y="56" width="272" height="74" rx="6" fill="#0E5493"/>
+<text x="42" y="80" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="500" fill="#DCEBFA">内核层（1–4）</text>
+<text x="42" y="102" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="11" fill="#BBD4EE">Loop / 状态 / 消息事件 / 中间件</text>
+
+<rect x="20" y="152" width="296" height="54" rx="6" fill="#1E6DB0"/>
+<text x="34" y="174" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="500" fill="#E3F0FB">能力层（5–9）</text>
+<text x="34" y="194" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="11" fill="#C7E0F6">工具簇 5–7 · 记忆与上下文 8–9</text>
+
+<rect x="20" y="214" width="296" height="40" rx="6" fill="#69ABE0"/>
+<text x="34" y="239" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="500" fill="#06243F">决策层（11）· 规划与推理</text>
+
+<rect x="20" y="260" width="296" height="40" rx="6" fill="#8CC3E8"/>
+<text x="34" y="285" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="500" fill="#06243F">执行层（12）· 执行环境</text>
+
+<!-- 安全执行：横切关注点，跨在上面四层之上，不占独立层 -->
+<rect x="14" y="310" width="308" height="48" rx="6" fill="#E07B39"/>
+<text x="168" y="330" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF">安全执行（10）· 横切关注点</text>
+<text x="168" y="348" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="10" fill="#FDF0E6">约束以上各层的执行动作：权限 / 隔离 / HITL</text>
+
+<!-- 卡内底部：外壳的构成范围 -->
+<text x="168" y="377" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="10" fill="#A8C8E8">构成 = 内核 / 能力 / 决策 / 执行 四层 + 横切安全</text>
+
+<!-- 卡内底部：本篇定位（不占层的收口，判定四层拼起来后整体好不好；虚线表示不是运行部件） -->
+<rect x="14" y="386" width="308" height="26" rx="5" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.2" stroke-dasharray="5 3"/>
+<text x="168" y="403" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="11" fill="#3C3489">15 Harness Engineering · 1–12 的总装与判定</text>
+</svg>
