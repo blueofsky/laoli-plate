@@ -1,0 +1,40 @@
+<svg viewBox="0 0 680 452" width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+<defs>
+<marker id="arrTeal" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+<path d="M0 0 L6 3 L0 6 Z" fill="#0d9488"/>
+</marker>
+</defs>
+<text x="50" y="28" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="600" fill="#1f2329">harness 的养成：规则随失败增，随能力减</text>
+
+<!-- 环形弧（起终点贴节点边缘；先画线，节点后画） -->
+<g stroke="#0d9488" stroke-width="1.5" fill="none">
+<path d="M404 90 C 455 78, 535 112, 540 161" marker-end="url(#arrTeal)"/>
+<path d="M540 199 C 545 240, 505 285, 463 306" marker-end="url(#arrTeal)"/>
+<path d="M399 325 C 425 375, 255 375, 280 325" marker-end="url(#arrTeal)"/>
+<path d="M216 306 C 175 285, 140 245, 140 199" marker-end="url(#arrTeal)"/>
+<path d="M140 161 C 145 112, 225 78, 276 90" marker-end="url(#arrTeal)"/>
+</g>
+
+<!-- 五节点 -->
+<rect x="276" y="71" width="128" height="38" rx="8" fill="#0d9488"/>
+<text x="340" y="94" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF">观察到失败</text>
+
+<rect x="476" y="161" width="128" height="38" rx="8" fill="#0d9488"/>
+<text x="540" y="184" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF">写进规则</text>
+
+<rect x="399" y="306" width="128" height="38" rx="8" fill="#0d9488"/>
+<text x="463" y="329" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF">跑验证</text>
+
+<rect x="152" y="306" width="128" height="38" rx="8" fill="#d97706"/>
+<text x="216" y="329" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF">模型升级复审</text>
+
+<rect x="76" y="161" width="128" height="38" rx="8" fill="#0d9488"/>
+<text x="140" y="184" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF">删或留</text>
+
+<!-- 中心 -->
+<text x="340" y="214" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="600" fill="#0f172a">约束因失败而生</text>
+<text x="340" y="234" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="600" fill="#0f172a">因能力而删</text>
+
+<text x="50" y="402" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="10" fill="#64748b">harness 的设计流程：只在见过真实失败后加约束，只在模型能力让约束多余后删约束。</text>
+<text x="50" y="418" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="10" fill="#64748b">设计流程图，非运行时流程；箭头表示设计动作的先后。</text>
+</svg>
