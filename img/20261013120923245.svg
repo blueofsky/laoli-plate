@@ -1,0 +1,92 @@
+<svg viewBox="0 0 680 486" width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+<defs>
+<marker id="arrDark3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#33332F"/>
+</marker>
+<marker id="arrAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#B45309"/>
+</marker>
+</defs>
+
+<!-- ============ 上部：事故经过六站 ============ -->
+<g font-family="PingFang SC, Microsoft YaHei, sans-serif">
+<!-- 站1 -->
+<rect x="20" y="30" width="200" height="62" rx="6" fill="#F0F9F8" stroke="#0d9488" stroke-width="1"/>
+<text x="32" y="48" font-size="10.5" font-weight="600" fill="#0f766e">① 常态</text>
+<text x="32" y="63" font-size="9" fill="#4B5563">15 分钟一轮 CI 巡检</text>
+<text x="32" y="77" font-size="9" fill="#4B5563">L2 级：隔离工作树里辅助修复</text>
+<!-- 站2 -->
+<rect x="240" y="30" width="200" height="62" rx="6" fill="#F0F9F8" stroke="#0d9488" stroke-width="1"/>
+<text x="252" y="48" font-size="10.5" font-weight="600" fill="#0f766e">② 诱因</text>
+<text x="252" y="63" font-size="9" fill="#4B5563">sprint 改动漏掉连接池</text>
+<text x="252" y="77" font-size="9" fill="#4B5563">teardown 钩子，集成测试失败</text>
+<!-- 站3 -->
+<rect x="460" y="30" width="200" height="62" rx="6" fill="#F0F9F8" stroke="#0d9488" stroke-width="1"/>
+<text x="472" y="48" font-size="10.5" font-weight="600" fill="#0f766e">③ 误诊</text>
+<text x="472" y="63" font-size="9" fill="#4B5563">连接超时读成性能阈值问题</text>
+<text x="472" y="77" font-size="9" fill="#4B5563">测试超时 5000 → 30000 毫秒</text>
+<!-- 站4 -->
+<rect x="20" y="104" width="200" height="62" rx="6" fill="#F0F9F8" stroke="#0d9488" stroke-width="1"/>
+<text x="32" y="122" font-size="10.5" font-weight="600" fill="#0f766e">④ 假阳性</text>
+<text x="32" y="137" font-size="9" fill="#4B5563">单跑偶尔通过</text>
+<text x="32" y="151" font-size="9" fill="#4B5563">验证者放行 diff</text>
+<!-- 站5 -->
+<rect x="240" y="104" width="200" height="62" rx="6" fill="#FEF3E2" stroke="#B45309" stroke-width="1"/>
+<text x="252" y="122" font-size="10.5" font-weight="600" fill="#B45309">⑤ 爆雷</text>
+<text x="252" y="137" font-size="9" fill="#4B5563">全量一跑内存耗尽</text>
+<text x="252" y="151" font-size="9" fill="#4B5563">并行 CI 作业 OOM 崩溃</text>
+<!-- 站6 -->
+<rect x="460" y="104" width="200" height="62" rx="6" fill="#FEF3E2" stroke="#B45309" stroke-width="1.4"/>
+<text x="472" y="122" font-size="10.5" font-weight="600" fill="#B45309">⑥ 止损</text>
+<text x="472" y="137" font-size="9" fill="#4B5563">熔断器查账本发现重复模式</text>
+<text x="472" y="151" font-size="9" fill="#4B5563">退出码 2 升级叫停</text>
+<!-- 站间箭头 -->
+<path d="M222 61 L236 61" stroke="#33332F" stroke-width="1.2" marker-end="url(#arrDark3)"/>
+<path d="M442 61 L456 61" stroke="#33332F" stroke-width="1.2" marker-end="url(#arrDark3)"/>
+<path d="M120 94 L120 100" stroke="#33332F" stroke-width="1.2" marker-end="url(#arrDark3)"/>
+<path d="M340 94 L340 100" stroke="#33332F" stroke-width="1.2" marker-end="url(#arrDark3)"/>
+<path d="M560 94 L560 100" stroke="#33332F" stroke-width="1.2" marker-end="url(#arrDark3)"/>
+<path d="M440 135 L456 135" stroke="#33332F" stroke-width="1.2" marker-end="url(#arrDark3)"/>
+</g>
+
+<!-- ============ 中部：token 攀升与熔断点 ============ -->
+<text x="20" y="204" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="600" fill="#33332F">14 次连续修复尝试 · 不到 3 小时 · 180 万 token</text>
+
+<!-- 坐标轴 -->
+<path d="M60 340 L640 340" stroke="#9CA3AF" stroke-width="1"/>
+<path d="M60 340 L60 226" stroke="#9CA3AF" stroke-width="1"/>
+<text x="640" y="356" text-anchor="end" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="9" fill="#6B7280">轮次 →</text>
+<text x="52" y="232" text-anchor="end" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="9" fill="#6B7280">token</text>
+
+<!-- 攀升折线 + 每次尝试标记 -->
+<path d="M74 336 L112 330 L150 322 L188 312 L226 300 L264 286 L302 270 L340 252 L378 262 L416 246 L454 226 L492 232 L530 214 L568 220 L606 238" stroke="#0d9488" stroke-width="1.8" fill="none"/>
+<g fill="#0d9488">
+<circle cx="74" cy="336" r="2.2"/><circle cx="112" cy="330" r="2.2"/><circle cx="150" cy="322" r="2.2"/><circle cx="188" cy="312" r="2.2"/><circle cx="226" cy="300" r="2.2"/><circle cx="264" cy="286" r="2.2"/><circle cx="302" cy="270" r="2.2"/><circle cx="340" cy="252" r="2.2"/><circle cx="378" cy="262" r="2.2"/><circle cx="416" cy="246" r="2.2"/><circle cx="454" cy="226" r="2.2"/><circle cx="492" cy="232" r="2.2"/><circle cx="530" cy="214" r="2.2"/><circle cx="568" cy="220" r="2.2"/>
+</g>
+<!-- 熔断点 -->
+<circle cx="606" cy="238" r="4.5" fill="#B45309"/>
+<line x1="586" y1="210" x2="626" y2="210" stroke="#B45309" stroke-width="1" stroke-dasharray="3 3"/>
+<path d="M606 226 L606 210" stroke="#B45309" stroke-width="1.2" stroke-dasharray="3 3" fill="none" marker-end="url(#arrAmber)"/>
+<text x="606" y="205" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="9.5" font-weight="600" fill="#B45309">熔断：退出码 2 叫停</text>
+<text x="150" y="322" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="8.5" fill="#6B7280">每次修复尝试的累计消耗</text>
+
+<!-- ============ 下部：熔断三件套 ============ -->
+<g font-family="PingFang SC, Microsoft YaHei, sans-serif">
+<rect x="20" y="380" width="200" height="58" rx="6" fill="#FFFFFF" stroke="#33332F" stroke-width="1"/>
+<text x="120" y="400" text-anchor="middle" font-size="10.5" font-weight="600" fill="#33332F">尝试次数硬上限</text>
+<text x="120" y="416" text-anchor="middle" font-size="9" fill="#4B5563">到顶即升级给人</text>
+<text x="120" y="430" text-anchor="middle" font-size="9" fill="#4B5563">不继续试</text>
+
+<rect x="240" y="380" width="200" height="58" rx="6" fill="#FFFFFF" stroke="#33332F" stroke-width="1"/>
+<text x="340" y="400" text-anchor="middle" font-size="10.5" font-weight="600" fill="#33332F">账本对账</text>
+<text x="340" y="416" text-anchor="middle" font-size="9" fill="#4B5563">机械查重复失败模式</text>
+<text x="340" y="430" text-anchor="middle" font-size="9" fill="#4B5563">比模型自查可靠</text>
+
+<rect x="460" y="380" width="200" height="58" rx="6" fill="#FFFFFF" stroke="#33332F" stroke-width="1"/>
+<text x="560" y="400" text-anchor="middle" font-size="10.5" font-weight="600" fill="#33332F">退出码升级</text>
+<text x="560" y="416" text-anchor="middle" font-size="9" fill="#4B5563">停止并通知人</text>
+<text x="560" y="430" text-anchor="middle" font-size="9" fill="#4B5563">测试基建进黑名单</text>
+</g>
+
+<text x="340" y="466" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="9" fill="#6B7280">事故记录取自 loop-engineering 仓库（Cobus Greyling）</text>
+</svg>
