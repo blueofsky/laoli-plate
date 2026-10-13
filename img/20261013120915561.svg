@@ -1,0 +1,90 @@
+<svg viewBox="0 0 680 540" width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+<defs>
+<marker id="arrTeal1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#0d9488"/>
+</marker>
+</defs>
+
+<!-- ============ 上部：自主循环六环节（harness 之上） ============ -->
+<!-- 环节间直线箭头（端点贴节点框边） -->
+<g stroke="#0d9488" stroke-width="1.5" fill="none">
+<path d="M369.4 51 L412.8 76" marker-end="url(#arrTeal1)"/>
+<path d="M442.2 110 L442.2 194" marker-end="url(#arrTeal1)"/>
+<path d="M412.8 228 L369.4 253" marker-end="url(#arrTeal1)"/>
+<path d="M310.6 253 L267.2 228" marker-end="url(#arrTeal1)"/>
+<path d="M237.8 194 L237.8 110" marker-end="url(#arrTeal1)"/>
+<path d="M267.2 76 L310.6 51" marker-end="url(#arrTeal1)"/>
+</g>
+
+<!-- 环心标注 -->
+<text x="340" y="147" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="600" fill="#0f766e">自主循环</text>
+<text x="340" y="165" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6B7280">harness 之上 · 本篇</text>
+
+<!-- 六个环节节点 -->
+<g font-family="PingFang SC, Microsoft YaHei, sans-serif">
+<!-- 触发（顶） -->
+<rect x="298" y="17" width="84" height="34" rx="6" fill="#FFFFFF" stroke="#0d9488" stroke-width="1.2"/>
+<text x="340" y="32" text-anchor="middle" font-size="12.5" font-weight="600" fill="#33332F">触发</text>
+<text x="340" y="45" text-anchor="middle" font-size="8.5" fill="#6B7280">无既有篇目</text>
+<!-- 分诊（右上） -->
+<rect x="400.2" y="76" width="84" height="34" rx="6" fill="#FFFFFF" stroke="#0d9488" stroke-width="1.2"/>
+<text x="442.2" y="91" text-anchor="middle" font-size="12.5" font-weight="600" fill="#33332F">分诊</text>
+<text x="442.2" y="104" text-anchor="middle" font-size="8.5" fill="#6B7280">无既有篇目</text>
+<!-- 执行（右下） -->
+<rect x="400.2" y="194" width="84" height="34" rx="6" fill="#FFFFFF" stroke="#0d9488" stroke-width="1.2"/>
+<text x="442.2" y="209" text-anchor="middle" font-size="12.5" font-weight="600" fill="#33332F">执行</text>
+<text x="442.2" y="222" text-anchor="middle" font-size="8.5" fill="#6B7280">第 12 · 13 期</text>
+<!-- 验证（底） -->
+<rect x="298" y="253" width="84" height="34" rx="6" fill="#FFFFFF" stroke="#0d9488" stroke-width="1.2"/>
+<text x="340" y="268" text-anchor="middle" font-size="12.5" font-weight="600" fill="#33332F">验证</text>
+<text x="340" y="281" text-anchor="middle" font-size="8.5" fill="#6B7280">第 13 期</text>
+<!-- 落地（左下） -->
+<rect x="195.8" y="194" width="84" height="34" rx="6" fill="#FFFFFF" stroke="#0d9488" stroke-width="1.2"/>
+<text x="237.8" y="209" text-anchor="middle" font-size="12.5" font-weight="600" fill="#33332F">落地</text>
+<text x="237.8" y="222" text-anchor="middle" font-size="8.5" fill="#6B7280">第 5 · 6 期</text>
+<!-- 停止（左上） -->
+<rect x="195.8" y="76" width="84" height="34" rx="6" fill="#FFFFFF" stroke="#0d9488" stroke-width="1.2"/>
+<text x="237.8" y="91" text-anchor="middle" font-size="12.5" font-weight="600" fill="#33332F">停止</text>
+<text x="237.8" y="104" text-anchor="middle" font-size="8.5" fill="#6B7280">本篇判定</text>
+</g>
+
+<!-- ============ 中部：harness 边界 ============ -->
+<text x="70" y="296" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6B7280">harness 边界</text>
+<path d="M60 304 L318 304" stroke="#33332F" stroke-width="1" stroke-dasharray="5 4" fill="none"/>
+<path d="M362 304 L620 304" stroke="#33332F" stroke-width="1" stroke-dasharray="5 4" fill="none"/>
+<path d="M340 289 L340 316" stroke="#0d9488" stroke-width="1.5" stroke-dasharray="4 3" fill="none" marker-end="url(#arrTeal1)"/>
+<text x="352" y="296" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="9" fill="#0f766e">每轮驱动</text>
+
+<!-- ============ 下部：Harness 宿主外壳 ============ -->
+<rect x="60" y="322" width="560" height="188" rx="10" fill="#0C447C"/>
+<text x="80" y="344" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Harness 宿主外壳</text>
+<text x="600" y="344" text-anchor="end" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="9" fill="#A8C8E8">harness 之内 · 第 15 期整体</text>
+
+<!-- 内核层（加高，内含内核循环） -->
+<rect x="80" y="356" width="124" height="82" rx="6" fill="#1668A8"/>
+<text x="142" y="374" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">内核层</text>
+<text x="142" y="388" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="8" fill="#A8C8E8">循环 · 状态 · 消息 · 中间件</text>
+<path d="M92 396 L192 396" stroke="#A8C8E8" stroke-width="0.75" stroke-dasharray="3 3"/>
+<text x="142" y="411" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="10.5" font-weight="600" fill="#FFFFFF">内核循环</text>
+<text x="142" y="425" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="8" fill="#A8C8E8">一轮之内 · 第 1 期</text>
+
+<!-- 其余三层 -->
+<rect x="212" y="356" width="124" height="46" rx="6" fill="#1668A8"/>
+<text x="274" y="374" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">能力层</text>
+<text x="274" y="389" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="8" fill="#A8C8E8">工具 · 记忆（第 5–9 期）</text>
+
+<rect x="344" y="356" width="124" height="46" rx="6" fill="#1668A8"/>
+<text x="406" y="374" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">决策层</text>
+<text x="406" y="389" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="8" fill="#A8C8E8">推理 · 计划（第 11 期）</text>
+
+<rect x="476" y="356" width="124" height="46" rx="6" fill="#1668A8"/>
+<text x="538" y="374" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">执行层</text>
+<text x="538" y="389" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="8" fill="#A8C8E8">工作树 · 沙箱（第 12 期）</text>
+
+<!-- 横切安全 -->
+<rect x="80" y="450" width="520" height="22" rx="4" fill="#0A3A66"/>
+<text x="340" y="465" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="9.5" fill="#A8C8E8">横切 · 安全执行（第 10 期）</text>
+
+<!-- 构成等式 -->
+<text x="340" y="492" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="9.5" fill="#A8C8E8">宿主外壳 = 内核 / 能力 / 决策 / 执行 四层 + 横切安全</text>
+</svg>
