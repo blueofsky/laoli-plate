@@ -1,0 +1,85 @@
+<svg viewBox="0 0 680 500" width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+<defs>
+<marker id="arrDark2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#33332F"/>
+</marker>
+</defs>
+
+<!-- ============ 上部：四种循环卡片（人逐级撤出） ============ -->
+<g font-family="PingFang SC, Microsoft YaHei, sans-serif">
+<!-- 卡片1 轮次循环 -->
+<rect x="20" y="86" width="152" height="176" rx="8" fill="#F0F9F8" stroke="#0d9488" stroke-width="1.2"/>
+<rect x="20" y="86" width="152" height="26" rx="8" fill="#0d9488"/>
+<text x="96" y="103" text-anchor="middle" font-size="12" font-weight="600" fill="#FFFFFF">轮次循环</text>
+<text x="32" y="130" font-size="9.5" font-weight="600" fill="#33332F">触发</text>
+<text x="32" y="143" font-size="9" fill="#4B5563">人发提示</text>
+<text x="32" y="163" font-size="9.5" font-weight="600" fill="#33332F">停止</text>
+<text x="32" y="176" font-size="9" fill="#4B5563">模型自判完成</text>
+<text x="32" y="196" font-size="9.5" font-weight="600" fill="#33332F">交出</text>
+<text x="32" y="209" font-size="9" fill="#0f766e">核查</text>
+<text x="32" y="229" font-size="9.5" font-weight="600" fill="#33332F">适合</text>
+<text x="32" y="242" font-size="9" fill="#4B5563">短任务、不规律的活</text>
+
+<!-- 卡片2 目标循环 -->
+<rect x="184" y="66" width="152" height="176" rx="8" fill="#F0F9F8" stroke="#0d9488" stroke-width="1.2"/>
+<rect x="184" y="66" width="152" height="26" rx="8" fill="#0d9488"/>
+<text x="260" y="83" text-anchor="middle" font-size="12" font-weight="600" fill="#FFFFFF">目标循环</text>
+<text x="196" y="110" font-size="9.5" font-weight="600" fill="#33332F">触发</text>
+<text x="196" y="123" font-size="9" fill="#4B5563">人实时发提示</text>
+<text x="196" y="143" font-size="9.5" font-weight="600" fill="#33332F">停止</text>
+<text x="196" y="156" font-size="9" fill="#4B5563">目标达成或轮次上限</text>
+<text x="196" y="176" font-size="9.5" font-weight="600" fill="#33332F">交出</text>
+<text x="196" y="189" font-size="9" fill="#0f766e">停止条件</text>
+<text x="196" y="209" font-size="9.5" font-weight="600" fill="#33332F">适合</text>
+<text x="196" y="222" font-size="9" fill="#4B5563">有可验证退出判据</text>
+
+<!-- 卡片3 时间循环 -->
+<rect x="348" y="46" width="152" height="176" rx="8" fill="#F0F9F8" stroke="#0d9488" stroke-width="1.2"/>
+<rect x="348" y="46" width="152" height="26" rx="8" fill="#0d9488"/>
+<text x="424" y="63" text-anchor="middle" font-size="12" font-weight="600" fill="#FFFFFF">时间循环</text>
+<text x="360" y="90" font-size="9.5" font-weight="600" fill="#33332F">触发</text>
+<text x="360" y="103" font-size="9" fill="#4B5563">时间间隔</text>
+<text x="360" y="123" font-size="9.5" font-weight="600" fill="#33332F">停止</text>
+<text x="360" y="136" font-size="9" fill="#4B5563">人取消，或工作完成</text>
+<text x="360" y="156" font-size="9.5" font-weight="600" fill="#33332F">交出</text>
+<text x="360" y="169" font-size="9" fill="#0f766e">触发</text>
+<text x="360" y="189" font-size="9.5" font-weight="600" fill="#33332F">适合</text>
+<text x="360" y="202" font-size="9" fill="#4B5563">周期工作、盯外部系统</text>
+
+<!-- 卡片4 主动循环 -->
+<rect x="512" y="26" width="152" height="176" rx="8" fill="#E6F5F2" stroke="#0f766e" stroke-width="1.5"/>
+<rect x="512" y="26" width="152" height="26" rx="8" fill="#0f766e"/>
+<text x="588" y="43" text-anchor="middle" font-size="12" font-weight="600" fill="#FFFFFF">主动循环</text>
+<text x="524" y="70" font-size="9.5" font-weight="600" fill="#33332F">触发</text>
+<text x="524" y="83" font-size="9" fill="#4B5563">事件或日程，无人在场</text>
+<text x="524" y="103" font-size="9.5" font-weight="600" fill="#33332F">停止</text>
+<text x="524" y="116" font-size="9" fill="#4B5563">单目标达成即退</text>
+<text x="524" y="136" font-size="9.5" font-weight="600" fill="#33332F">交出</text>
+<text x="524" y="149" font-size="9" fill="#0f766e">提示（人只剩设计）</text>
+<text x="524" y="169" font-size="9.5" font-weight="600" fill="#33332F">适合</text>
+<text x="524" y="182" font-size="9" fill="#4B5563">周期性、定义良好的工作流</text>
+</g>
+
+<!-- 撤出路径箭头 -->
+<path d="M40 288 L636 30" stroke="#33332F" stroke-width="1.2" stroke-dasharray="6 4" fill="none" marker-end="url(#arrDark2)"/>
+<text x="330" y="300" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="10" fill="#33332F">同一条撤出路径上的四级台阶：每上一级，人从循环里多撤出一件</text>
+
+<!-- ============ 下部：各家分类名对照 ============ -->
+<text x="20" y="336" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="600" fill="#33332F">分类名会漂移，触发 × 停止的组合不会</text>
+
+<g font-family="PingFang SC, Microsoft YaHei, sans-serif">
+<rect x="20" y="348" width="640" height="34" rx="5" fill="#F3F4F6"/>
+<text x="32" y="369" font-size="9.5" font-weight="600" fill="#33332F">Claude Code 官方</text>
+<text x="180" y="369" font-size="9.5" fill="#4B5563">四种 loop：turn-based / goal-based / time-based / proactive（2026-06-30 指南）</text>
+
+<rect x="20" y="388" width="640" height="34" rx="5" fill="#F3F4F6"/>
+<text x="32" y="409" font-size="9.5" font-weight="600" fill="#33332F">loop-engineering 仓库</text>
+<text x="180" y="409" font-size="9.5" fill="#4B5563">自主等级 L1 只报告 → L2 辅助修复 → L3 无人值守，验证者连续正确一周才升一级</text>
+
+<rect x="20" y="428" width="640" height="34" rx="5" fill="#F3F4F6"/>
+<text x="32" y="449" font-size="9.5" font-weight="600" fill="#33332F">Addy Osmani</text>
+<text x="180" y="449" font-size="9.5" fill="#4B5563">不做分类，只列零件：五件套加一处外部记忆</text>
+</g>
+
+<text x="340" y="478" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="9" fill="#6B7280">本篇骨架用触发条件与停止条件的组合；产品词汇只在对照时出现</text>
+</svg>
